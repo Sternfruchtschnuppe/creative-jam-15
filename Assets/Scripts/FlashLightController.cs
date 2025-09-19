@@ -7,11 +7,12 @@ public class FlashLightController : MonoBehaviour
     public float range = 5f;
     [Range(0, 180)] public float coneRadiusDegrees = 45f;
     private Transform playerTransform;
-
+    private LayerMask environmentMask;
     private void Start()
     {
         playerTransform = transform.parent;
         UpdateCollider();
+        environmentMask = LayerMask.GetMask("Environment");
     }
     
     private void OnValidate()
@@ -28,10 +29,15 @@ public class FlashLightController : MonoBehaviour
     {
         if (!other.TryGetComponent<EnemyBehaviour>(out var enemy)) return;
         
-        var enemyDir = (enemy.transform.position - playerTransform.position).normalized;;
+        var enemyDir = (enemy.transform.position - playerTransform.position).normalized;
         if (Mathf.Acos(Vector3.Dot(enemyDir, playerTransform.forward)) < coneRadiusDegrees * Mathf.Deg2Rad)
         {
-            enemy.EnterVisionCone();
+            if (!Physics.Raycast(other.transform.position + Vector3.up, 
+                    playerTransform.position - other.transform.position + Vector3.up, 
+                    out RaycastHit hit, range, environmentMask))
+            {
+                enemy.EnterVisionCone();
+            }
         }
     }
 
