@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerManager : MonoBehaviour
 {
-    [Header("Réglages")]
+    [Header("Reglages")]
     public float moveSpeed = 5f;
 
     private Vector2 moveInput;
@@ -17,9 +17,13 @@ public class PlayerManager : MonoBehaviour
     public Light flashLight;
 
     public Animator playerAnimator;
+    
+    private FlashLightController flashLightController;
+    
     private void Start()
     {
         initialVector = playerCam.transform.position - this.transform.position;
+        flashLightController = GetComponentInChildren<FlashLightController>();
     }
 
     public void OnMoveCtx(UnityEngine.InputSystem.InputAction.CallbackContext ctx)
@@ -27,12 +31,23 @@ public class PlayerManager : MonoBehaviour
         if (ctx.performed)
         {
             moveInput = ctx.ReadValue<Vector2>();
-            playerAnimator.SetBool("isMoving", true);
+            // playerAnimator.SetBool("isMoving", true);
         }
         if (ctx.canceled)
         {
             moveInput = Vector2.zero;
-            playerAnimator.SetBool("isMoving", false);
+            // playerAnimator.SetBool("isMoving", false);
+        }
+    }
+    
+    public void UpdateLife(float life)
+    {
+        this.life = life;
+        flashLightController.UpdateLife(life);
+        
+        if (life <= 0)
+        {
+            GameManager.instance.OnGameOver();
         }
     }
 

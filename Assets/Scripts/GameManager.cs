@@ -10,12 +10,12 @@ public class GameManager : MonoBehaviour
     public float startLife = 5.0f;
     
     public bool paused = false;
-    private Player player;
+    private PlayerManager player;
 
     private void Awake()
     {
         instance = this;
-        player = FindFirstObjectByType<Player>();
+        player = FindFirstObjectByType<PlayerManager>();
         player.life = startLife;
     }
     

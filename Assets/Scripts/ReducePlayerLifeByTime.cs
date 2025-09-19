@@ -3,11 +3,11 @@ using UnityEngine;
 public class ReducePlayerLifeByTime : MonoBehaviour
 {
     public float lifeReductionPerSecond = 1.0f;
-    private Player player;
+    private PlayerManager player;
 
     private void Start()
     {
-        player = FindFirstObjectByType<Player>();
+        player = FindFirstObjectByType<PlayerManager>();
     }
 
     private void Update()

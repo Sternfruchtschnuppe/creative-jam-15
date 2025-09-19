@@ -65,7 +65,7 @@ public class EnemyBehaviour : MonoBehaviour
     {
         if (Time.time < lastAttacked + attackCooldown) return;
         
-        if (other.gameObject.TryGetComponent<Player>(out var player))
+        if (other.gameObject.TryGetComponent<PlayerManager>(out var player))
         {
             lastAttacked = Time.time;
             player.life -= damage;
