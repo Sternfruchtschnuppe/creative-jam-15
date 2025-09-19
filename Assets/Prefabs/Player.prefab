@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 548866624949934978}
   - component: {fileID: 5751102144735848891}
+  - component: {fileID: 7096778732918861483}
   m_Layer: 0
   m_Name: VisionCone
   m_TagString: Untagged
@@ -51,8 +52,22 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 5
+  m_Radius: 7
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7096778732918861483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1071667963210312492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee84196631a4e0040b0646f734b546c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  range: 7
+  coneRadiusDegrees: 45
 --- !u!1 &7226598193105823737
 GameObject:
   m_ObjectHideFlags: 0

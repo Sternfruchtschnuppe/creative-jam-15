@@ -34,6 +34,12 @@ public class FlashLightController : MonoBehaviour
             enemy.EnterVisionCone();
         }
     }
+
+    public void UpdateLife(float life)
+    {
+        range = life;
+        UpdateCollider();
+    }
     
     private void OnDrawGizmos()
     {

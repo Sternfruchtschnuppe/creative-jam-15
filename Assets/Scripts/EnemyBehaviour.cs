@@ -6,11 +6,16 @@ public class EnemyBehaviour : MonoBehaviour
 {
     public enum EnemyState { Chase, Flee, Freeze }
     public EnemyState state = EnemyState.Chase;
+    public float damage = 1f;
+    
     public float scaredTime = 0.5f;
-        
+    public float attackCooldown = 0.5f;
+
+    
     private Transform playerTransform;
     private NavMeshAgent agent;
 
+    private float lastAttacked = float.NegativeInfinity;
     private float lastEnteredVisionCone = float.NegativeInfinity;
     
     void Start()
@@ -43,6 +48,27 @@ public class EnemyBehaviour : MonoBehaviour
         else if (state == EnemyState.Freeze)
         {
             agent.isStopped = true;
+        }
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        TryAttackPlayer(other);
+    }
+    
+    private void OnCollisionStay(Collision other)
+    {
+        TryAttackPlayer(other);
+    }
+    
+    private void TryAttackPlayer(Collision other)
+    {
+        if (Time.time < lastAttacked + attackCooldown) return;
+        
+        if (other.gameObject.TryGetComponent<Player>(out var player))
+        {
+            lastAttacked = Time.time;
+            player.life -= damage;
         }
     }
 
