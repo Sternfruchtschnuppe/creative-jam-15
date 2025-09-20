@@ -14,6 +14,7 @@ public class PlayerManager : MonoBehaviour
     
     public float life = 0.1f;
 
+    public Light lifeLight;
     public Light flashLight;
 
     public Animator playerAnimator;
@@ -21,6 +22,7 @@ public class PlayerManager : MonoBehaviour
     private FlashLightController flashLightController;
 
     public bool isFiring;
+    public bool isUsingFlashLight;
 
     public GameObject Bullet;
 
@@ -82,6 +84,21 @@ public class PlayerManager : MonoBehaviour
          //   playerAnimator.SetBool("isSprinting", false);
         }
     }
+    public void OnFlashLightCtx(InputAction.CallbackContext ctx)
+    {
+        if (ctx.performed)
+        {
+            //    moveSpeed = 7f;
+            isUsingFlashLight = true;
+            //     playerAnimator.SetBool("isSprinting", true);
+        }
+        if (ctx.canceled)
+        {
+            isUsingFlashLight = false;
+            //   moveSpeed = 4f;
+            //   playerAnimator.SetBool("isSprinting", false);
+        }
+    }
 
     public void UpdateLife(float life)
     {
@@ -115,9 +132,18 @@ public class PlayerManager : MonoBehaviour
         }
 
 
-        flashLight.innerSpotAngle = Mathf.Lerp(10f, 180f, life / GameManager.instance.maxLife);
-        flashLight.spotAngle = Mathf.Lerp(10f, 180f, life / GameManager.instance.maxLife);
+        lifeLight.innerSpotAngle = Mathf.Lerp(10f, 180f, life / GameManager.instance.maxLife);
+        lifeLight.spotAngle = Mathf.Lerp(10f, 180f, life / GameManager.instance.maxLife);
 
+
+        if (isUsingFlashLight)
+        {
+            flashLight.gameObject.SetActive(true);
+        }
+        else
+        {
+            flashLight.gameObject.SetActive(false);
+        }
      //   flashLight.range = Mathf.Lerp(1f, 10f, life / gameManager.maxLife);
 
 
