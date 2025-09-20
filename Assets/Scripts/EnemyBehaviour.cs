@@ -24,6 +24,10 @@ public class EnemyBehaviour : MonoBehaviour
 
     public bool isOperational = true;
 
+    public bool isPlayerInTrigger;
+
+    public PlayerManager player;
+
     void Start()
     {
         isOperational = true;
@@ -61,16 +65,6 @@ public class EnemyBehaviour : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            if (isOperational)
-            {
-                TryAttackPlayer(other);
-            }
-        }
-    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -78,6 +72,8 @@ public class EnemyBehaviour : MonoBehaviour
         {
             if (isOperational)
             {
+                player = other.GetComponent<PlayerManager>();
+                isPlayerInTrigger = true;
                 state = EnemyState.Freeze;
                 if (agent != null) agent.isStopped = true;
 
@@ -96,6 +92,8 @@ public class EnemyBehaviour : MonoBehaviour
         {
             if (isOperational)
             {
+                player = other.GetComponent<PlayerManager>();
+                isPlayerInTrigger = false;
                 state = EnemyState.Chase;
                 if (agent != null)
                 {
@@ -112,17 +110,6 @@ public class EnemyBehaviour : MonoBehaviour
         }
     }
 
-    private void TryAttackPlayer(Collider other)
-    {
-        if (Time.time < lastAttacked + attackCooldown) return;
-
-        if (other.gameObject.TryGetComponent<PlayerManager>(out var player))
-        {
-            lastAttacked = Time.time;
-            player.life -= damage;
-            player.OnHit();
-        }
-    }
 
     public void EnterVisionCone()
     {
@@ -151,5 +138,16 @@ public class EnemyBehaviour : MonoBehaviour
     public void DestroyItself()
     {
         Destroy(gameObject);
+    }
+    public void MonsterAttack()
+    {
+        if (isOperational)
+        {
+            if (isPlayerInTrigger)
+            {
+                player.life -= damage;
+                player.OnHit();
+            }
+        }
     }
 }
