@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
@@ -145,9 +146,12 @@ public class PlayerManager : MonoBehaviour
         Vector3 movement = playerCamTransform.rotation * new Vector3(lerpedInput.x, 0, lerpedInput.y);
         
         transform.position += movement * (currentMoveSpeed * Time.deltaTime);
-        
-        // playerCam.transform.position = initialVector + this.transform.position;
 
+        if (NavMesh.SamplePosition(transform.position, out var hit, 2.0f, NavMesh.AllAreas))
+        {
+            transform.position = new Vector3(transform.position.x, hit.position.y, transform.position.z);
+        }
+        
         Vector2 m = Mouse.current.position.ReadValue();
 
         float depth = playerCam.WorldToScreenPoint(transform.position).z;
