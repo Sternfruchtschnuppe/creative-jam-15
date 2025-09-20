@@ -21,13 +21,18 @@ public class PlayerManager : MonoBehaviour
     private FlashLightController flashLightController;
 
     public GameManager gameManager;
-    
+
+    public bool isFiring;
+
+    public GameObject Bullet;
+
+    public float Dammage = 0.5f;
     private void Start()
     {
         initialVector = playerCam.transform.position - this.transform.position;
         flashLightController = GetComponentInChildren<FlashLightController>();
 
-        InvokeRepeating("PassiveDecreaseLife", 0.1f, 2.5f);
+        InvokeRepeating("Fire", 0.1f, 0.2f);
     }
 
     public void OnMoveCtx(UnityEngine.InputSystem.InputAction.CallbackContext ctx)
@@ -54,6 +59,22 @@ public class PlayerManager : MonoBehaviour
         {
             moveSpeed = 4f;
             playerAnimator.SetBool("isSprinting", false);
+        }
+    }
+
+    public void OnAttackCtx(InputAction.CallbackContext ctx)
+    {
+        if (ctx.performed)
+        {
+        //    moveSpeed = 7f;
+            isFiring = true;
+       //     playerAnimator.SetBool("isSprinting", true);
+        }
+        if (ctx.canceled)
+        {
+            isFiring = false;
+         //   moveSpeed = 4f;
+         //   playerAnimator.SetBool("isSprinting", false);
         }
     }
 
@@ -88,12 +109,22 @@ public class PlayerManager : MonoBehaviour
         }
 
 
-        flashLight.innerSpotAngle = Mathf.Lerp(10f, 180f, life / gameManager.maxLife);
-        flashLight.spotAngle = Mathf.Lerp(10f, 180f, life / gameManager.maxLife);
+             flashLight.innerSpotAngle = Mathf.Lerp(10f, 180f, life / gameManager.maxLife);
+             flashLight.spotAngle = Mathf.Lerp(10f, 180f, life / gameManager.maxLife);
+
+     //   flashLight.range = Mathf.Lerp(1f, 10f, life / gameManager.maxLife);
+
+
 
     }
-    void PassiveDecreaseLife()
+    void Fire()
     {
-        life -= 0.5f;
+        if (isFiring)
+        {
+            GameObject bullet = Instantiate(Bullet, this.transform.position, Quaternion.Euler(0,0,0));
+            bullet.GetComponent<BulletTrigger>().Dammage = Dammage;
+            bullet.GetComponent<Rigidbody>().linearVelocity = this.transform.forward * 10f;
+            bullet.transform.rotation = Quaternion.Euler(90, this.transform.rotation.eulerAngles.y, 0);
+        }
     }
 }
