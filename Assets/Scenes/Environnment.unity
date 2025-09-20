@@ -15515,6 +15515,7 @@ GameObject:
   - component: {fileID: 457687596}
   - component: {fileID: 457687595}
   - component: {fileID: 457687594}
+  - component: {fileID: 457687597}
   m_Layer: 0
   m_Name: stairs
   m_TagString: Untagged
@@ -15593,6 +15594,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1714432754}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 180}
+--- !u!64 &457687597
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457687593}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5543852910939878438, guid: 66a2e99317d928149a0c21e63ad4c16a, type: 3}
 --- !u!1 &459868779
 GameObject:
   m_ObjectHideFlags: 0
@@ -50961,6 +50984,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1714432754}
+  - component: {fileID: 1714432755}
   m_Layer: 0
   m_Name: Level
   m_TagString: Untagged
@@ -51544,6 +51568,38 @@ Transform:
   - {fileID: 346304148}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1714432755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714432753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshSurface
+  m_SerializedVersion: 0
+  m_AgentTypeID: 0
+  m_CollectObjects: 2
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 1
+  m_DefaultArea: 0
+  m_GenerateLinks: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 23800000, guid: 183f7f68922e1b94d847a23927c55543, type: 2}
+  m_BuildHeightMesh: 0
 --- !u!1 &1715999689
 GameObject:
   m_ObjectHideFlags: 0
@@ -55885,6 +55941,7 @@ GameObject:
   - component: {fileID: 1845650138}
   - component: {fileID: 1845650137}
   - component: {fileID: 1845650136}
+  - component: {fileID: 1845650139}
   m_Layer: 0
   m_Name: stairs (1)
   m_TagString: Untagged
@@ -55963,6 +56020,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1714432754}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 180}
+--- !u!64 &1845650139
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845650135}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5543852910939878438, guid: 66a2e99317d928149a0c21e63ad4c16a, type: 3}
 --- !u!1 &1848694386
 GameObject:
   m_ObjectHideFlags: 0
