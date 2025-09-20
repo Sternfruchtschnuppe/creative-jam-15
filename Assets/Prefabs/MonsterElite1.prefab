@@ -18388,8 +18388,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.049, y: 0, z: 5.22}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2.4, y: 2.4, z: 2.4}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 6104794518875206417}
   - {fileID: 431260692159021818}
@@ -18460,9 +18460,11 @@ MonoBehaviour:
   damage: 1
   scaredTime: 0.5
   attackCooldown: 2
-  life: 2
+  life: 6
   monsterAnimator: {fileID: 4956351349716975871}
   isOperational: 0
+  isPlayerInTrigger: 0
+  player: {fileID: 0}
 --- !u!136 &530788136264164769
 CapsuleCollider:
   m_ObjectHideFlags: 0

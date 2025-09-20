@@ -37,7 +37,9 @@ public class PlayerManager : MonoBehaviour
     public Color lifeLightColorRed;
 
     public Transform weaponSlot;
-    
+
+    public bool isOperational = true;
+
     private void Start()
     {
         lifeLightColor = lifeLight.color;
@@ -133,51 +135,55 @@ public class PlayerManager : MonoBehaviour
         this.life = life;
         flashLightController.UpdateLife(life);
         
-        if (life <= 0)
+        if (life <= 0 && isOperational)
         {
+            isOperational = false;
+            playerAnimator.SetTrigger("OnDeath");
             GameManager.instance.OnGameOver();
         }
     }
 
     private void Update()
     {
-        lerpedInput = Vector2.Lerp(lerpedInput, rawInput, Time.deltaTime * smoothingSpeed);
-        
-        Vector3 movement = playerCamTransform.rotation * new Vector3(lerpedInput.x, 0, lerpedInput.y);
-        
-        transform.position += movement * (currentMoveSpeed * Time.deltaTime);
-
-        if (NavMesh.SamplePosition(transform.position, out var hit, 2.0f, NavMesh.AllAreas))
+        if (isOperational)
         {
-            transform.position = new Vector3(transform.position.x, hit.position.y, transform.position.z);
+            lerpedInput = Vector2.Lerp(lerpedInput, rawInput, Time.deltaTime * smoothingSpeed);
+
+            Vector3 movement = playerCamTransform.rotation * new Vector3(lerpedInput.x, 0, lerpedInput.y);
+
+            transform.position += movement * (currentMoveSpeed * Time.deltaTime);
+
+            if (NavMesh.SamplePosition(transform.position, out var hit, 2.0f, NavMesh.AllAreas))
+            {
+                transform.position = new Vector3(transform.position.x, hit.position.y, transform.position.z);
+            }
+
+            Vector2 m = Mouse.current.position.ReadValue();
+
+            float depth = playerCam.WorldToScreenPoint(transform.position).z;
+            if (depth > 0f)
+            {
+                Vector3 lookAt = playerCam.ScreenToWorldPoint(new Vector3(m.x, m.y, depth));
+                lookAt.y = transform.position.y; // yaw uniquement
+                transform.rotation = Quaternion.LookRotation(lookAt - transform.position, Vector3.up);
+            }
+
+
+            lifeLight.innerSpotAngle = Mathf.Lerp(10f, 180f, life / GameManager.instance.maxLife);
+            lifeLight.spotAngle = Mathf.Lerp(10f, 180f, life / GameManager.instance.maxLife);
+
+
+            if (isUsingFlashLight)
+            {
+                flashLight.gameObject.SetActive(true);
+            }
+            else
+            {
+                flashLight.gameObject.SetActive(false);
+            }
+            //   flashLight.range = Mathf.Lerp(1f, 10f, life / gameManager.maxLife);
+
         }
-        
-        Vector2 m = Mouse.current.position.ReadValue();
-
-        float depth = playerCam.WorldToScreenPoint(transform.position).z;
-        if (depth > 0f) 
-        {
-            Vector3 lookAt = playerCam.ScreenToWorldPoint(new Vector3(m.x, m.y, depth));
-            lookAt.y = transform.position.y; // yaw uniquement
-            transform.rotation = Quaternion.LookRotation(lookAt - transform.position, Vector3.up);
-        }
-
-
-        lifeLight.innerSpotAngle = Mathf.Lerp(10f, 180f, life / GameManager.instance.maxLife);
-        lifeLight.spotAngle = Mathf.Lerp(10f, 180f, life / GameManager.instance.maxLife);
-
-
-        if (isUsingFlashLight)
-        {
-            flashLight.gameObject.SetActive(true);
-        }
-        else
-        {
-            flashLight.gameObject.SetActive(false);
-        }
-     //   flashLight.range = Mathf.Lerp(1f, 10f, life / gameManager.maxLife);
-
-
 
     }
     void Fire()

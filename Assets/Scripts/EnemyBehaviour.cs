@@ -5,9 +5,11 @@ using UnityEngine.AI;
 public class EnemyBehaviour : MonoBehaviour
 {
     [System.Serializable]
-    public enum EnemyState { Chase, Flee, Freeze }
+    public enum EnemyState { Chase, Slow, Freeze }
     public EnemyState state = EnemyState.Chase;
     public float damage = 1f;
+
+    public float speed = 3.5f;
 
     public float scaredTime = 0.5f;
     public float attackCooldown = 0.5f;
@@ -30,9 +32,12 @@ public class EnemyBehaviour : MonoBehaviour
 
     void Start()
     {
+
         isOperational = true;
         playerTransform = GameObject.FindGameObjectWithTag("Player")?.transform;
         agent = GetComponent<NavMeshAgent>();
+
+        agent.speed = speed;
     }
 
     void Update()
@@ -42,21 +47,21 @@ public class EnemyBehaviour : MonoBehaviour
         
         if (state != EnemyState.Freeze && Time.time > scaredTime + lastEnteredVisionCone)
         {
-            if (state == EnemyState.Flee) state = EnemyState.Chase;
+            if (state == EnemyState.Slow) state = EnemyState.Chase;
         }
 
         switch (state)
         {
             case EnemyState.Chase:
-                agent.isStopped = false;                           
+                agent.isStopped = false;
+                agent.speed = speed;
                 agent.SetDestination(playerTransform.position);
                 break;
 
-            case EnemyState.Flee:
-                agent.isStopped = false;                           
-                Vector3 dirToPlayer = transform.position - playerTransform.position;
-                Vector3 newPos = transform.position + dirToPlayer;
-                agent.SetDestination(newPos);
+            case EnemyState.Slow:
+                agent.isStopped = false;
+                agent.speed = speed / 10f;
+                agent.SetDestination(playerTransform.position);
                 break;
 
             case EnemyState.Freeze:
@@ -116,7 +121,7 @@ public class EnemyBehaviour : MonoBehaviour
         if (isOperational)
         {
             lastEnteredVisionCone = Time.time;
-            state = EnemyState.Flee;
+            state = EnemyState.Slow;
         }
     }
 
