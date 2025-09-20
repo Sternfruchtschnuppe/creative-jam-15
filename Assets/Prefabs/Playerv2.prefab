@@ -2386,6 +2386,9 @@ MonoBehaviour:
   isUsingFlashLight: 0
   Bullet: {fileID: 2436786927938855150, guid: f27d5655f3a4d354abfd6439e5cac932, type: 3}
   Dammage: 0.5
+  lifeLightColor: {r: 0, g: 0, b: 0, a: 0}
+  lifeLightColorRed: {r: 0, g: 0, b: 0, a: 0}
+  weaponSlot: {fileID: 0}
 --- !u!54 &9001648243565943488
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2409,7 +2412,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
