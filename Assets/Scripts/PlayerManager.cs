@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -14,23 +15,40 @@ public class PlayerManager : MonoBehaviour
     
     public float life = 0.1f;
 
+    public Light lifeLight;
     public Light flashLight;
 
     public Animator playerAnimator;
     
     private FlashLightController flashLightController;
+
+    public bool isFiring;
+    public bool isUsingFlashLight;
+
+    public GameObject Bullet;
+
+    public float Dammage = 0.5f;
     
     private Camera playerCam;
     private Transform playerCamTransform;
+
+    public Color lifeLightColor;
+    public Color lifeLightColorRed;
+
+    public Transform weaponSlot;
     
     private void Start()
     {
+        lifeLightColor = lifeLight.color;
+        SceneManager.LoadScene("Environnment", LoadSceneMode.Additive);
+
         playerCam = Camera.main;
         playerCamTransform = playerCam.transform.parent;
         
         flashLightController = GetComponentInChildren<FlashLightController>();
 
         currentMoveSpeed = moveSpeed;
+        InvokeRepeating("Fire", 0.1f, 0.2f);
     }
 
     public void OnMoveCtx(UnityEngine.InputSystem.InputAction.CallbackContext ctx)
@@ -60,6 +78,55 @@ public class PlayerManager : MonoBehaviour
         }
     }
 
+    public void OnAttackCtx(InputAction.CallbackContext ctx)
+    {
+        if (ctx.performed)
+        {
+        //    moveSpeed = 7f;
+            isFiring = true;
+       //     playerAnimator.SetBool("isSprinting", true);
+        }
+        if (ctx.canceled)
+        {
+            isFiring = false;
+         //   moveSpeed = 4f;
+         //   playerAnimator.SetBool("isSprinting", false);
+        }
+    }
+    public void OnFlashLightCtx(InputAction.CallbackContext ctx)
+    {
+        if (ctx.performed)
+        {
+            //    moveSpeed = 7f;
+            isUsingFlashLight = true;
+            //     playerAnimator.SetBool("isSprinting", true);
+        }
+        if (ctx.canceled)
+        {
+            isUsingFlashLight = false;
+            //   moveSpeed = 4f;
+            //   playerAnimator.SetBool("isSprinting", false);
+        }
+    }
+    public void OnHit()
+    {
+        if (IsInvoking("OnEndHit"))
+            CancelInvoke("OnEndHit");
+        if (IsInvoking("OnPreHit"))
+            CancelInvoke("OnPreHit");
+        Invoke("OnEndHit", 0.7f);
+        Invoke("OnPreHit", 0.2f);
+        lifeLight.enabled = false;
+    }
+    public void OnPreHit()
+    {
+        lifeLight.enabled = true;
+        lifeLight.color = lifeLightColorRed;
+    }
+    public void OnEndHit()
+    {
+        lifeLight.color = lifeLightColor;
+    }
     public void UpdateLife(float life)
     {
         this.life = life;
@@ -92,8 +159,31 @@ public class PlayerManager : MonoBehaviour
         }
 
 
-        flashLight.innerSpotAngle = Mathf.Lerp(10f, 180f, life / GameManager.instance.maxLife);
-        flashLight.spotAngle = Mathf.Lerp(10f, 180f, life / GameManager.instance.maxLife);
+        lifeLight.innerSpotAngle = Mathf.Lerp(10f, 180f, life / GameManager.instance.maxLife);
+        lifeLight.spotAngle = Mathf.Lerp(10f, 180f, life / GameManager.instance.maxLife);
 
+
+        if (isUsingFlashLight)
+        {
+            flashLight.gameObject.SetActive(true);
+        }
+        else
+        {
+            flashLight.gameObject.SetActive(false);
+        }
+     //   flashLight.range = Mathf.Lerp(1f, 10f, life / gameManager.maxLife);
+
+
+
+    }
+    void Fire()
+    {
+        if (isFiring)
+        {
+            GameObject bullet = Instantiate(Bullet, weaponSlot.transform.position, Quaternion.Euler(0,0,0));
+            bullet.GetComponent<BulletTrigger>().Dammage = Dammage;
+            bullet.GetComponent<Rigidbody>().linearVelocity = this.transform.forward * 10f;
+            bullet.transform.rotation = Quaternion.Euler(90, this.transform.rotation.eulerAngles.y, 0);
+        }
     }
 }

@@ -27,6 +27,8 @@ public class FlashLightController : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
+        if (!playerTransform.GetComponent<PlayerManager>().isUsingFlashLight)
+            return;
         if (!other.TryGetComponent<EnemyBehaviour>(out var enemy)) return;
         
         var enemyDir = (enemy.transform.position - playerTransform.position).normalized;
