@@ -31,15 +31,28 @@ public class PlayerManager : MonoBehaviour
         if (ctx.performed)
         {
             moveInput = ctx.ReadValue<Vector2>();
-            // playerAnimator.SetBool("isMoving", true);
+            playerAnimator.SetBool("isMoving", true);
         }
         if (ctx.canceled)
         {
             moveInput = Vector2.zero;
-            // playerAnimator.SetBool("isMoving", false);
+            playerAnimator.SetBool("isMoving", false);
         }
     }
-    
+    public void OnSprintCtx(InputAction.CallbackContext ctx)
+    {
+        if (ctx.performed)
+        {
+            moveSpeed = 7f;
+            playerAnimator.SetBool("isSprinting", true);
+        }
+        if (ctx.canceled)
+        {
+            moveSpeed = 4f;
+            playerAnimator.SetBool("isSprinting", false);
+        }
+    }
+
     public void UpdateLife(float life)
     {
         this.life = life;
