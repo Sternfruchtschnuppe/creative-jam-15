@@ -11,7 +11,8 @@ public class EnemyBehaviour : MonoBehaviour
     public float scaredTime = 0.5f;
     public float attackCooldown = 0.5f;
 
-    
+    public float life = 2f;
+
     private Transform playerTransform;
     private NavMeshAgent agent;
 
@@ -76,5 +77,17 @@ public class EnemyBehaviour : MonoBehaviour
     {
         lastEnteredVisionCone = Time.time;
         state = EnemyState.Flee;
+    }
+
+
+    public void UpdateLife(float life)
+    {
+        this.life = life;
+
+        if (life <= 0)
+        {
+            playerTransform.GetComponent<PlayerManager>().UpdateLife(playerTransform.GetComponent<PlayerManager>().life + 1f);
+            Destroy(this.gameObject);
+        }
     }
 }
