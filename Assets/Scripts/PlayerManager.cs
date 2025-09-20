@@ -19,11 +19,15 @@ public class PlayerManager : MonoBehaviour
     public Animator playerAnimator;
     
     private FlashLightController flashLightController;
+
+    public GameManager gameManager;
     
     private void Start()
     {
         initialVector = playerCam.transform.position - this.transform.position;
         flashLightController = GetComponentInChildren<FlashLightController>();
+
+        InvokeRepeating("PassiveDecreaseLife", 0.1f, 2.5f);
     }
 
     public void OnMoveCtx(UnityEngine.InputSystem.InputAction.CallbackContext ctx)
@@ -84,8 +88,12 @@ public class PlayerManager : MonoBehaviour
         }
 
 
-        flashLight.innerSpotAngle = Mathf.Lerp(10f, 90f, life);
-        flashLight.spotAngle = Mathf.Lerp(10f, 90f, life);
+        flashLight.innerSpotAngle = Mathf.Lerp(10f, 180f, life / gameManager.maxLife);
+        flashLight.spotAngle = Mathf.Lerp(10f, 180f, life / gameManager.maxLife);
 
+    }
+    void PassiveDecreaseLife()
+    {
+        life -= 0.5f;
     }
 }
