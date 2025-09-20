@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -30,9 +31,17 @@ public class PlayerManager : MonoBehaviour
     
     private Camera playerCam;
     private Transform playerCamTransform;
+
+    public Color lifeLightColor;
+    public Color lifeLightColorRed;
+
+    public Transform weaponSlot;
     
     private void Start()
     {
+        lifeLightColor = lifeLight.color;
+        SceneManager.LoadScene("Environnment", LoadSceneMode.Additive);
+
         playerCam = Camera.main;
         playerCamTransform = playerCam.transform.parent;
         
@@ -99,7 +108,25 @@ public class PlayerManager : MonoBehaviour
             //   playerAnimator.SetBool("isSprinting", false);
         }
     }
-
+    public void OnHit()
+    {
+        if (IsInvoking("OnEndHit"))
+            CancelInvoke("OnEndHit");
+        if (IsInvoking("OnPreHit"))
+            CancelInvoke("OnPreHit");
+        Invoke("OnEndHit", 0.7f);
+        Invoke("OnPreHit", 0.2f);
+        lifeLight.enabled = false;
+    }
+    public void OnPreHit()
+    {
+        lifeLight.enabled = true;
+        lifeLight.color = lifeLightColorRed;
+    }
+    public void OnEndHit()
+    {
+        lifeLight.color = lifeLightColor;
+    }
     public void UpdateLife(float life)
     {
         this.life = life;
@@ -153,7 +180,7 @@ public class PlayerManager : MonoBehaviour
     {
         if (isFiring)
         {
-            GameObject bullet = Instantiate(Bullet, this.transform.position, Quaternion.Euler(0,0,0));
+            GameObject bullet = Instantiate(Bullet, weaponSlot.transform.position, Quaternion.Euler(0,0,0));
             bullet.GetComponent<BulletTrigger>().Dammage = Dammage;
             bullet.GetComponent<Rigidbody>().linearVelocity = this.transform.forward * 10f;
             bullet.transform.rotation = Quaternion.Euler(90, this.transform.rotation.eulerAngles.y, 0);

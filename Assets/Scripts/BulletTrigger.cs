@@ -15,14 +15,18 @@ public class BulletTrigger : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Enemy")
+        if (other.TryGetComponent<EnemyBehaviour>(out var enemy))
         {
-            other.GetComponent<EnemyBehaviour>().UpdateLife(other.GetComponent<EnemyBehaviour>().life - Dammage);
-            Destroy(this.gameObject);
+            if (enemy.isOperational)
+            {
+                enemy.UpdateLife(enemy.life - Dammage);
+            }
+            else
+            {
+                return;
+            }
+            
         }
-        if(other.tag == "Environment")
-        {
-            Destroy(this.gameObject);
-        }
+        Destroy(this.gameObject);
     }
 }
