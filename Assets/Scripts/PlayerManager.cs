@@ -83,42 +83,40 @@ public class PlayerManager : MonoBehaviour
     {
         if (ctx.performed)
         {
-        //    moveSpeed = 7f;
             isFiring = true;
-       //     playerAnimator.SetBool("isSprinting", true);
         }
         if (ctx.canceled)
         {
             isFiring = false;
-         //   moveSpeed = 4f;
-         //   playerAnimator.SetBool("isSprinting", false);
         }
     }
+    
     public void OnFlashLightCtx(InputAction.CallbackContext ctx)
     {
-        if (ctx.performed)
-        {
-            //    moveSpeed = 7f;
-            isUsingFlashLight = true;
-            //     playerAnimator.SetBool("isSprinting", true);
-        }
-        if (ctx.canceled)
-        {
-            isUsingFlashLight = false;
-            //   moveSpeed = 4f;
-            //   playerAnimator.SetBool("isSprinting", false);
-        }
+        //todo insert secondary weapon / flash light flashing
+        // if (ctx.performed)
+        // {
+        //     isUsingFlashLight = true;
+        // }
+        // if (ctx.canceled)
+        // {
+        //     isUsingFlashLight = false;
+        // }
     }
+    
     public void OnHit()
     {
-        if (IsInvoking("OnEndHit"))
-            CancelInvoke("OnEndHit");
-        if (IsInvoking("OnPreHit"))
-            CancelInvoke("OnPreHit");
-        Invoke("OnEndHit", 0.7f);
-        Invoke("OnPreHit", 0.2f);
-        lifeLight.enabled = false;
+        FXManager.instance.ShowVignette();
+        
+        // if (IsInvoking("OnEndHit"))
+        //     CancelInvoke("OnEndHit");
+        // if (IsInvoking("OnPreHit"))
+        //     CancelInvoke("OnPreHit");
+        // Invoke("OnEndHit", 0.7f);
+        // Invoke("OnPreHit", 0.2f);
+        // lifeLight.enabled = false;
     }
+    
     public void OnPreHit()
     {
         lifeLight.enabled = true;
@@ -149,7 +147,7 @@ public class PlayerManager : MonoBehaviour
 
         if (NavMesh.SamplePosition(transform.position, out var hit, 2.0f, NavMesh.AllAreas))
         {
-            transform.position = new Vector3(transform.position.x, hit.position.y, transform.position.z);
+            transform.position = hit.position;
         }
         
         Vector2 m = Mouse.current.position.ReadValue();
@@ -167,18 +165,14 @@ public class PlayerManager : MonoBehaviour
         lifeLight.spotAngle = Mathf.Lerp(10f, 180f, life / GameManager.instance.maxLife);
 
 
-        if (isUsingFlashLight)
-        {
-            flashLight.gameObject.SetActive(true);
-        }
-        else
-        {
-            flashLight.gameObject.SetActive(false);
-        }
-     //   flashLight.range = Mathf.Lerp(1f, 10f, life / gameManager.maxLife);
-
-
-
+        // if (isUsingFlashLight)
+        // {
+        //     flashLight.gameObject.SetActive(true);
+        // }
+        // else
+        // {
+        //     flashLight.gameObject.SetActive(false);
+        // }
     }
     void Fire()
     {

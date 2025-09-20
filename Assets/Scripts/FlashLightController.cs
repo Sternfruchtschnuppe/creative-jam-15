@@ -1,13 +1,28 @@
 using System;
 using UnityEngine;
+using Random = System.Random;
 
 [ExecuteAlways]
 public class FlashLightController : MonoBehaviour
 {
     public float range = 5f;
     [Range(0, 180)] public float coneRadiusDegrees = 45f;
+    
+    public float offThreshhold = 1.0f;
+    public float flickerThreshold = 2.5f;
+    
+    public float lightMaxIntensity = 1000f;
+    public float lightMinIntensity = 200f;
+
+    public float minRange = 3.0f;
+    public float maxRange = 20.0f;
+    
+    public Light spotLight;
+    
     private Transform playerTransform;
     private LayerMask environmentMask;
+    
+    
     private void Start()
     {
         playerTransform = transform.parent;
@@ -45,8 +60,28 @@ public class FlashLightController : MonoBehaviour
 
     public void UpdateLife(float life)
     {
-        range = life;
+        range = Mathf.Clamp(life, minRange, maxRange);
+        var range01 = (range - minRange) / (maxRange - minRange);
         UpdateCollider();
+
+        if (life < offThreshhold)
+        {
+            spotLight.intensity = 0;
+        }
+        else if (life < flickerThreshold)
+        {
+            //flicker
+            float t = Time.time;
+            float v = Mathf.Sin(13.7f * t) 
+                      + 0.7f * Mathf.Cos(5.3f * t) 
+                      + 0.4f * Mathf.Sin(11.1f * t);
+            spotLight.intensity = (v > 0.5f ? 1f : 0.05f) * lightMinIntensity;
+        }
+        else
+        {
+            spotLight.intensity = lightMinIntensity +  range01 * (lightMaxIntensity - lightMinIntensity);
+        }
+        spotLight.range = range * 1.5f;
     }
     
     private void OnDrawGizmos()
