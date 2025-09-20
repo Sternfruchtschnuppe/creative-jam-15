@@ -5,13 +5,13 @@ public class PlayerManager : MonoBehaviour
 {
     [Header("Reglages")]
     public float moveSpeed = 5f;
-
-    private Vector2 moveInput;
-
-    public Camera playerCam;
-
-    public Vector3 initialVector;
-
+    public float smoothingSpeed = 20f;
+    public float sprintSpeed = 7f;
+    private Vector2 rawInput;
+    private Vector2 lerpedInput;
+    
+    private float currentMoveSpeed;
+    
     public float life = 0.1f;
 
     public Light flashLight;
@@ -20,18 +20,23 @@ public class PlayerManager : MonoBehaviour
     
     private FlashLightController flashLightController;
 
-    public GameManager gameManager;
-
     public bool isFiring;
 
     public GameObject Bullet;
 
     public float Dammage = 0.5f;
+    
+    private Camera playerCam;
+    private Transform playerCamTransform;
+    
     private void Start()
     {
-        initialVector = playerCam.transform.position - this.transform.position;
+        playerCam = Camera.main;
+        playerCamTransform = playerCam.transform.parent;
+        
         flashLightController = GetComponentInChildren<FlashLightController>();
 
+        currentMoveSpeed = moveSpeed;
         InvokeRepeating("Fire", 0.1f, 0.2f);
     }
 
@@ -39,12 +44,12 @@ public class PlayerManager : MonoBehaviour
     {
         if (ctx.performed)
         {
-            moveInput = ctx.ReadValue<Vector2>();
+            rawInput = ctx.ReadValue<Vector2>();
             playerAnimator.SetBool("isMoving", true);
         }
         if (ctx.canceled)
         {
-            moveInput = Vector2.zero;
+            rawInput = Vector2.zero;
             playerAnimator.SetBool("isMoving", false);
         }
     }
@@ -52,12 +57,12 @@ public class PlayerManager : MonoBehaviour
     {
         if (ctx.performed)
         {
-            moveSpeed = 7f;
+            currentMoveSpeed = sprintSpeed;
             playerAnimator.SetBool("isSprinting", true);
         }
         if (ctx.canceled)
         {
-            moveSpeed = 4f;
+            currentMoveSpeed = moveSpeed;
             playerAnimator.SetBool("isSprinting", false);
         }
     }
@@ -91,12 +96,13 @@ public class PlayerManager : MonoBehaviour
 
     private void Update()
     {
+        lerpedInput = Vector2.Lerp(lerpedInput, rawInput, Time.deltaTime * smoothingSpeed);
         
-        Vector3 movement = new Vector3(moveInput.x, 0, moveInput.y);
-
+        Vector3 movement = playerCamTransform.rotation * new Vector3(lerpedInput.x, 0, lerpedInput.y);
         
-        transform.position += movement * moveSpeed * Time.deltaTime;
-        playerCam.transform.position = initialVector + this.transform.position;
+        transform.position += movement * (currentMoveSpeed * Time.deltaTime);
+        
+        // playerCam.transform.position = initialVector + this.transform.position;
 
         Vector2 m = Mouse.current.position.ReadValue();
 
@@ -109,8 +115,8 @@ public class PlayerManager : MonoBehaviour
         }
 
 
-             flashLight.innerSpotAngle = Mathf.Lerp(10f, 180f, life / gameManager.maxLife);
-             flashLight.spotAngle = Mathf.Lerp(10f, 180f, life / gameManager.maxLife);
+        flashLight.innerSpotAngle = Mathf.Lerp(10f, 180f, life / GameManager.instance.maxLife);
+        flashLight.spotAngle = Mathf.Lerp(10f, 180f, life / GameManager.instance.maxLife);
 
      //   flashLight.range = Mathf.Lerp(1f, 10f, life / gameManager.maxLife);
 
