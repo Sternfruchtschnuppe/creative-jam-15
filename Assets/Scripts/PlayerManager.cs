@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 public class PlayerManager : MonoBehaviour
 {
     [Header("Réglages")]
-    public float moveSpeed = 5f;
+    public float moveSpeed = 4f;
 
     private Vector2 moveInput;
 
@@ -20,9 +20,11 @@ public class PlayerManager : MonoBehaviour
     private void Start()
     {
         initialVector = playerCam.transform.position - this.transform.position;
+
+        
     }
 
-    public void OnMoveCtx(UnityEngine.InputSystem.InputAction.CallbackContext ctx)
+    public void OnMoveCtx(InputAction.CallbackContext ctx)
     {
         if (ctx.performed)
         {
@@ -34,6 +36,23 @@ public class PlayerManager : MonoBehaviour
             moveInput = Vector2.zero;
             playerAnimator.SetBool("isMoving", false);
         }
+    }
+    public void OnSprintCtx(InputAction.CallbackContext ctx)
+    {
+        if (ctx.performed)
+        {
+            moveSpeed = 7f;
+            playerAnimator.SetBool("isSprinting", true);
+        }
+        if (ctx.canceled)
+        {
+            moveSpeed = 4f;
+            playerAnimator.SetBool("isSprinting", false);
+        }
+    }
+    public void OnMove(InputValue value)
+    {
+
     }
 
     private void Update()
