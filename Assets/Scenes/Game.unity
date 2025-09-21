@@ -327,6 +327,10 @@ PrefabInstance:
       propertyPath: PanelFadeIn
       value: 
       objectReference: {fileID: 1731537362}
+    - target: {fileID: 7027857168417101575, guid: fbd86bb915dc57c408e8224ee22edce0, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8278575148398402391, guid: fbd86bb915dc57c408e8224ee22edce0, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -1698,7 +1702,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 9e19469b9fbbddc4ba7243c75f97ef14, type: 3}
+  m_Resource: {fileID: 8300000, guid: d3aa1e67d2d271847a97ac9642d69cc0, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.1
   m_Pitch: 1
