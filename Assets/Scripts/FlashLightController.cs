@@ -11,13 +11,13 @@ public class FlashLightController : MonoBehaviour
     public float offThreshhold = 1.0f;
     public float flickerThreshold = 2.5f;
     
-    public float lightMaxIntensity = 1000f;
-    public float lightMinIntensity = 200f;
+    public float lightMinIntensityPercentage = 0.2f;
 
     public float minRange = 3.0f;
     public float maxRange = 20.0f;
     
-    public Light spotLight;
+    private Light[] spotLights;
+    private float[] maxIntensities;
     
     private Transform playerTransform;
     private LayerMask environmentMask;
@@ -28,6 +28,13 @@ public class FlashLightController : MonoBehaviour
         playerTransform = transform.parent;
         UpdateCollider();
         environmentMask = LayerMask.GetMask("Environment");
+        
+        spotLights = gameObject.GetComponentsInChildren<Light>();
+        maxIntensities = new float[spotLights.Length];
+        for (int i = 0; i < spotLights.Length; i++)
+        {
+            maxIntensities[i] = spotLights[i].intensity;
+        }
     }
     
     private void OnValidate()
@@ -66,7 +73,7 @@ public class FlashLightController : MonoBehaviour
 
         if (life < offThreshhold)
         {
-            spotLight.intensity = 0;
+            foreach (var s in spotLights) s.intensity = 0;
         }
         else if (life < flickerThreshold)
         {
@@ -75,13 +82,22 @@ public class FlashLightController : MonoBehaviour
             float v = Mathf.Sin(13.7f * t) 
                       + 0.7f * Mathf.Cos(5.3f * t) 
                       + 0.4f * Mathf.Sin(11.1f * t);
-            spotLight.intensity = (v > 0.5f ? 1f : 0.05f) * lightMinIntensity;
+            for (var i = 0; i < spotLights.Length; i++)
+            {
+                spotLights[i].intensity = (v > 0.5f ? 1f : 0.05f) * lightMinIntensityPercentage * maxIntensities[i];
+            }
         }
         else
         {
-            spotLight.intensity = lightMinIntensity +  range01 * (lightMaxIntensity - lightMinIntensity);
+            for (var i = 0; i < spotLights.Length; i++)
+            {
+                spotLights[i].intensity = lightMinIntensityPercentage * maxIntensities[i] + 
+                                          range01 * maxIntensities[i] * (1f - lightMinIntensityPercentage);
+            }
+
+            // spotLight.intensity = lightMinIntensity +  range01 * (lightMaxIntensity - lightMinIntensity);
         }
-        spotLight.range = range * 1.5f;
+        foreach (var s in spotLights) s.range = range * 1.5f;
     }
     
     private void OnDrawGizmos()
