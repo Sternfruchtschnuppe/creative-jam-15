@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.InputSystem;
@@ -16,13 +17,11 @@ public class PlayerManager : MonoBehaviour
     
     public float life = 0.1f;
 
-    public Light lifeLight;
-    public Light flashLight;
+    public Light bigFlashLight;
 
     public Animator playerAnimator;
     
     private FlashLightController flashLightController;
- //   private FlashLightController flashLightController2;
 
     public bool isFiring;
     public bool isUsingFlashLight;
@@ -34,8 +33,8 @@ public class PlayerManager : MonoBehaviour
     private Camera playerCam;
     private Transform playerCamTransform;
 
-    public Color lifeLightColor;
-    public Color lifeLightColorRed;
+    // public Color lifeLightColor;
+    // public Color lifeLightColorRed;
 
     public Transform weaponSlot;
 
@@ -47,13 +46,9 @@ public class PlayerManager : MonoBehaviour
     public AudioClip flashSound;
     public AudioSource source;
 
-    public GameObject Gun;
-    public GameObject Lamp;
-    public Light LampFlashLight;
-
     private void Start()
     {
-        lifeLightColor = lifeLight.color;
+        // lifeLightColor = lifeLight.color;
         SceneManager.LoadScene("Environnment", LoadSceneMode.Additive);
 
         playerCam = Camera.main;
@@ -98,43 +93,24 @@ public class PlayerManager : MonoBehaviour
     {
         if (ctx.performed)
         {
-
-
-
             isFiring = true;
-            if (Lamp.activeSelf)
-            {
-                Gun.SetActive(true);
-                Lamp.SetActive(false);
-            }
-
         }
-
         if (ctx.canceled)
         {
             isFiring = false;
         }
     }
-    public void OnSwitchCtx(UnityEngine.InputSystem.InputAction.CallbackContext ctx)
-    {
-        
-    }
-
+    
     public void OnFlashLightCtx(InputAction.CallbackContext ctx)
     {
         if (ctx.performed)
         {
-            if (Gun.activeSelf)
-            {
-                Gun.SetActive(false);
-                Lamp.SetActive(true);
-            }
-
             if (!isCranking)
             {
                 isCranking = true;
                 source.PlayOneShot(crankingSound, 1);
-                Invoke("OnCrankingFinished", crankingSound.length);
+                StartCoroutine(nameof(StartBigFlash));
+                // Invoke("OnCrankingFinished", crankingSound.length);
             }
         }
         //todo insert secondary weapon / flash light flashing
@@ -147,18 +123,42 @@ public class PlayerManager : MonoBehaviour
         //     isUsingFlashLight = false;
         // }
     }
-    void OnCrankingFinished()
+
+    IEnumerator StartBigFlash()
     {
+        yield return new WaitForSeconds(crankingSound.length);
         isCranking = false;
+        bigFlashLight.gameObject.SetActive(true);
+        var maxIntensity = bigFlashLight.intensity;
+        var t = 0f;
+        bigFlashLight.intensity = 0f;
+        
         source.PlayOneShot(flashSound);
-        Invoke("OnFlashFinished", 1.2f);
-        LampFlashLight.intensity *= 100f;
-        //DO FLASH
+        while (true)
+        {
+            t += Time.deltaTime * 5f;
+            bigFlashLight.intensity = Mathf.Lerp(0f, maxIntensity, t);
+            if (Mathf.Approximately(bigFlashLight.intensity, maxIntensity)) break;
+            yield return null;
+        }
+        //flashing
+        yield return new WaitForSeconds(1.2f);
+        bigFlashLight.gameObject.SetActive(false);
     }
-    void OnFlashFinished()
-    {
-        LampFlashLight.intensity /= 100f;
-    }
+    
+    // void OnCrankingFinished()
+    // {
+    //     isCranking = false;
+    //     source.PlayOneShot(flashSound);
+    //     Invoke("OnFlashFinished", 1.2f);
+    //     flashLight.intensity *= 10f;
+    //     //DO FLASH
+    // }
+    // void OnFlashFinished()
+    // {
+    //     flashLight.intensity /= 10f;
+    // }
+    
     public void OnHit()
     {
         FXManager.instance.ShowVignette();
@@ -211,8 +211,8 @@ public class PlayerManager : MonoBehaviour
             }
 
 
-            lifeLight.innerSpotAngle = Mathf.Lerp(10f, 180f, life / GameManager.instance.maxLife);
-            lifeLight.spotAngle = Mathf.Lerp(10f, 180f, life / GameManager.instance.maxLife);
+            // lifeLight.innerSpotAngle = Mathf.Lerp(10f, 180f, life / GameManager.instance.maxLife);
+            // lifeLight.spotAngle = Mathf.Lerp(10f, 180f, life / GameManager.instance.maxLife);
         }
     }
 
