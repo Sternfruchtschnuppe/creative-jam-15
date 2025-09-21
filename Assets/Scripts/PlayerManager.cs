@@ -86,51 +86,32 @@ public class PlayerManager : MonoBehaviour
     {
         if (ctx.performed)
         {
-        //    moveSpeed = 7f;
             isFiring = true;
-       //     playerAnimator.SetBool("isSprinting", true);
         }
         if (ctx.canceled)
         {
             isFiring = false;
-         //   moveSpeed = 4f;
-         //   playerAnimator.SetBool("isSprinting", false);
         }
     }
+    
     public void OnFlashLightCtx(InputAction.CallbackContext ctx)
     {
-        if (ctx.performed)
-        {
-            //    moveSpeed = 7f;
-            isUsingFlashLight = true;
-            //     playerAnimator.SetBool("isSprinting", true);
-        }
-        if (ctx.canceled)
-        {
-            isUsingFlashLight = false;
-            //   moveSpeed = 4f;
-            //   playerAnimator.SetBool("isSprinting", false);
-        }
+        //todo insert secondary weapon / flash light flashing
+        // if (ctx.performed)
+        // {
+        //     isUsingFlashLight = true;
+        // }
+        // if (ctx.canceled)
+        // {
+        //     isUsingFlashLight = false;
+        // }
     }
     public void OnHit()
     {
-        if (IsInvoking("OnEndHit"))
-            CancelInvoke("OnEndHit");
-        if (IsInvoking("OnPreHit"))
-            CancelInvoke("OnPreHit");
-        Invoke("OnEndHit", 0.7f);
-        Invoke("OnPreHit", 0.2f);
-        lifeLight.enabled = false;
+        FXManager.instance.ShowVignette();
     }
-    public void OnPreHit()
-    {
-        lifeLight.enabled = true;
-        lifeLight.color = lifeLightColorRed;
-    }
-    public void OnEndHit()
-    {
-        lifeLight.color = lifeLightColor;
-    }
+    
+    
     public void UpdateLife(float life)
     {
         this.life = life;
@@ -185,21 +166,9 @@ public class PlayerManager : MonoBehaviour
 
             lifeLight.innerSpotAngle = Mathf.Lerp(10f, 180f, life / GameManager.instance.maxLife);
             lifeLight.spotAngle = Mathf.Lerp(10f, 180f, life / GameManager.instance.maxLife);
-
-
-            if (isUsingFlashLight)
-            {
-                flashLight.gameObject.SetActive(true);
-            }
-            else
-            {
-                flashLight.gameObject.SetActive(false);
-            }
-            //   flashLight.range = Mathf.Lerp(1f, 10f, life / gameManager.maxLife);
-
         }
-
     }
+
     void Fire()
     {
         if (isFiring)

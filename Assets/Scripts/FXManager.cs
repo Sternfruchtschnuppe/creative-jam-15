@@ -1,5 +1,10 @@
 using System;
+using System.Collections;
 using UnityEngine;
+using UnityEngine;
+using System.Collections;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 
 [ExecuteAlways]
 public class FXManager : MonoBehaviour
@@ -10,6 +15,9 @@ public class FXManager : MonoBehaviour
     public Color toonColor = Color.white;
     public float coneCutoutRadius = 0.1f;
 
+    private Volume volume;
+    private Vignette vignette;
+    
     private void Awake()
     {
         instance = this;
@@ -18,6 +26,8 @@ public class FXManager : MonoBehaviour
     private void Start()
     {
         playerTransform = GameObject.FindWithTag("Player").transform;
+        volume = FindAnyObjectByType<Volume>();
+        volume.profile.TryGet(out vignette);
     }
 
     private void OnValidate()
@@ -35,5 +45,26 @@ public class FXManager : MonoBehaviour
         if (playerTransform == null) return;
         Shader.SetGlobalVector("_PlayerPos", playerTransform.position);
         Shader.SetGlobalFloat("_ConeCutoutRadius", coneCutoutRadius);
+    }
+    
+    public void ShowVignette() => StartCoroutine(FadeVignette());
+
+    IEnumerator FadeVignette()
+    {
+        float t=0;
+        while (t < 0.5f)
+        {
+            vignette.intensity.value = Mathf.Lerp(0, 0.55f, t / 0.25f);
+            t += Time.deltaTime;
+            yield return null;
+        }
+
+        t=0;
+        while (t < 0.5f)
+        {
+            vignette.intensity.value = Mathf.Lerp(0.55f, 0, t / 0.25f);
+            t += Time.deltaTime;
+            yield return null;
+        }
     }
 }
