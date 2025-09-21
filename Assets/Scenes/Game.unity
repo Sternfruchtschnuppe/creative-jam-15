@@ -425,9 +425,25 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3403602309615832591, guid: fbd86bb915dc57c408e8224ee22edce0, type: 3}
+      propertyPath: enemies.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3403602309615832591, guid: fbd86bb915dc57c408e8224ee22edce0, type: 3}
       propertyPath: enemiesLinearPerWave
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 3403602309615832591, guid: fbd86bb915dc57c408e8224ee22edce0, type: 3}
+      propertyPath: 'enemies.Array.data[0]'
+      value: 
+      objectReference: {fileID: 5751097738162245190, guid: ecab16579acb977408704388edcad145, type: 3}
+    - target: {fileID: 3403602309615832591, guid: fbd86bb915dc57c408e8224ee22edce0, type: 3}
+      propertyPath: 'enemies.Array.data[1]'
+      value: 
+      objectReference: {fileID: 9049360351235630702, guid: 48236fd9ebbf603438cf0eee0ad08f88, type: 3}
+    - target: {fileID: 3403602309615832591, guid: fbd86bb915dc57c408e8224ee22edce0, type: 3}
+      propertyPath: 'enemies.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1444871090821432962, guid: 0f6174e3b19fa154b977d873e65bc052, type: 3}
     - target: {fileID: 4288938354225191609, guid: fbd86bb915dc57c408e8224ee22edce0, type: 3}
       propertyPath: m_fontAsset
       value: 
