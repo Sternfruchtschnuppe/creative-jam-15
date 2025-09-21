@@ -183,7 +183,7 @@ public class EnemyBehaviour : MonoBehaviour
         {
             if (isPlayerInTrigger)
             {
-                player.life -= damage;
+                player.UpdateLife(player.life - damage);
                 player.OnHit();
             }
         }

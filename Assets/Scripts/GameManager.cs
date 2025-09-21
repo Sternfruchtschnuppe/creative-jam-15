@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     
-    public float startLife = 5.0f;
+    public float startLife = 0.5f;
     public float maxLife = 20f;
     
     public bool paused = false;
@@ -24,18 +24,24 @@ public class GameManager : MonoBehaviour
     public Image PanelFadeIn;
 
     public bool isTimingFading;
+
+    public bool isStartingFromNothing = true;
     
     private void Awake()
     {
         instance = this;
-        
+        isStartingFromNothing = true;
     }
     private void Start()
     {
         InvokeRepeating("PassiveIncreaseScore", 0.1f, 0.05f);
 
         player = FindFirstObjectByType<PlayerManager>();
+        
         player.life = startLife;
+        isStartingFromNothing = true;
+        
+        GetComponent<ReducePlayerLifeByTime>().enabled = false;
     }
     private void Update()
     {
@@ -76,16 +82,35 @@ public class GameManager : MonoBehaviour
     public void RestartGame()
     {
         SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+
+        isStartingFromNothing = true;
+        GetComponent<ReducePlayerLifeByTime>().enabled = false;
+        
     }
+    
     public void PassiveIncreaseScore()
     {
+        if (isStartingFromNothing) return;
+        
         if (this.GetComponent<EnemySpawner>().waveActive && player.isOperational)
         {
             score += 1;
         }
     }
+
+    private void StartPlaying()
+    {
+        isStartingFromNothing = false;
+        GetComponent<ReducePlayerLifeByTime>().enabled = true;
+    }
+    
     public void MonsterDead(int id)
     {
+        if (isStartingFromNothing)
+        {
+            StartPlaying();
+        }
+        
         // progression quadratique avec le niveau
         score += 50 * (id + 1) * (id + 1);
     }
