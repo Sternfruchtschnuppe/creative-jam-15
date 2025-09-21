@@ -1655,6 +1655,7 @@ MonoBehaviour:
   Gun: {fileID: 5285433095491250077}
   Lamp: {fileID: 6034104963670629455}
   muzzleFlash: {fileID: 2505854869455751633}
+  lampPressedTime: 0
 --- !u!54 &3333727439084239537
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3202,17 +3203,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7474991064154950946}
     m_Modifications:
+    - target: {fileID: 544205473200004914, guid: 42626a4a5d9c4bf4ca8023185f3e4fe0, type: 3}
+      propertyPath: m_Range
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1388025623566114079, guid: 42626a4a5d9c4bf4ca8023185f3e4fe0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.171
+      value: 0.173
       objectReference: {fileID: 0}
     - target: {fileID: 1388025623566114079, guid: 42626a4a5d9c4bf4ca8023185f3e4fe0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.388
+      value: 0.498
       objectReference: {fileID: 0}
     - target: {fileID: 1388025623566114079, guid: 42626a4a5d9c4bf4ca8023185f3e4fe0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.044
+      value: 0.038
       objectReference: {fileID: 0}
     - target: {fileID: 1388025623566114079, guid: 42626a4a5d9c4bf4ca8023185f3e4fe0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3245,6 +3250,22 @@ PrefabInstance:
     - target: {fileID: 1517164330242166169, guid: 42626a4a5d9c4bf4ca8023185f3e4fe0, type: 3}
       propertyPath: m_Name
       value: WeaponTransform 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4911314064549444277, guid: 42626a4a5d9c4bf4ca8023185f3e4fe0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.018
+      objectReference: {fileID: 0}
+    - target: {fileID: 4911314064549444277, guid: 42626a4a5d9c4bf4ca8023185f3e4fe0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.184
+      objectReference: {fileID: 0}
+    - target: {fileID: 4911314064549444277, guid: 42626a4a5d9c4bf4ca8023185f3e4fe0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.369
+      objectReference: {fileID: 0}
+    - target: {fileID: 6781182647258815259, guid: 42626a4a5d9c4bf4ca8023185f3e4fe0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
