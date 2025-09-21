@@ -12,7 +12,7 @@ public class ReducePlayerLifeByTime : MonoBehaviour
 
     private void Update()
     {
-        if (GameManager.instance.paused) return;
+        if (GameManager.instance.paused || !GameManager.instance.GetComponent<EnemySpawner>().waveActive) return;
 
         var life = player.life - lifeReductionPerSecond * Time.deltaTime;
         player.UpdateLife(life);

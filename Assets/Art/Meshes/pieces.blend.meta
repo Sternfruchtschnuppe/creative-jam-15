@@ -3,9 +3,84 @@ guid: 66a2e99317d928149a0c21e63ad4c16a
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pillar
+    second: {fileID: 2100000, guid: e50ebf26672e9c9488e925533d832ac4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pillar_Base
+    second: {fileID: 2100000, guid: c5a517f32f0b763449487acb6f6186b0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Upper_Window
+    second: {fileID: 2100000, guid: 4e69207a12d9b454da35be07e9a2bd8e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: big_pillar
+    second: {fileID: 2100000, guid: 41b711eab5058724e92edf78149a141a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ground
+    second: {fileID: 2100000, guid: ac46ccc1de27d2441866a492f54ffa75, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ramp
+    second: {fileID: 2100000, guid: c20e91f09100a2a459c0fb878c5ea919, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ramp_broken
+    second: {fileID: 2100000, guid: 3312b647f6b1dd04da44d3f5a92fcee1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ramp_stairs
+    second: {fileID: 2100000, guid: a19e48ab989deb644b911a6e4d598987, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stairs
+    second: {fileID: 2100000, guid: 602278d27063f5544bd64bb96e489f91, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wall_basic
+    second: {fileID: 2100000, guid: bc3cb21ad3378c74c85e603fa5193575, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wall_basic_half_height
+    second: {fileID: 2100000, guid: b39be4f8f5a637642bc00d3776479dd8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wall_entrance
+    second: {fileID: 2100000, guid: e11117dd4d26d90439e2928547d6c7fa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wall_triangle_left
+    second: {fileID: 2100000, guid: aee2d9dbaaa369748a0c6e42e9d9d4c7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wall_triangle_right
+    second: {fileID: 2100000, guid: 6d65a7b70cb26fa4eaaba77032b13037, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wall_window
+    second: {fileID: 2100000, guid: cbc79e00eaddd2b44b9c0b5e1c312770, type: 2}
   materials:
-    materialImportMode: 0
+    materialImportMode: 2
     materialName: 0
     materialSearch: 1
     materialLocation: 1

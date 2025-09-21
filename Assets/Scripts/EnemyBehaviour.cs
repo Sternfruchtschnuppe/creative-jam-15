@@ -30,43 +30,61 @@ public class EnemyBehaviour : MonoBehaviour
 
     public PlayerManager player;
 
+    public SkinnedMeshRenderer skinnedMeshRenderer;
+
+    public float dissolveAmount = 0f;
+    public Material dissolveMat;
+
+    public int monsterID;
     void Start()
     {
-
+        
         isOperational = true;
         playerTransform = GameObject.FindGameObjectWithTag("Player")?.transform;
         agent = GetComponent<NavMeshAgent>();
 
         agent.speed = speed;
+
+        skinnedMeshRenderer = GetComponentInChildren<SkinnedMeshRenderer>();
+        dissolveMat = skinnedMeshRenderer.material;
     }
 
     void Update()
     {
-        if (playerTransform == null || agent == null) return;
-
-        
-        if (state != EnemyState.Freeze && Time.time > scaredTime + lastEnteredVisionCone)
+        if (isOperational)
         {
-            if (state == EnemyState.Slow) state = EnemyState.Chase;
+            if (playerTransform == null || agent == null) return;
+
+
+            if (state != EnemyState.Freeze && Time.time > scaredTime + lastEnteredVisionCone)
+            {
+                if (state == EnemyState.Slow) state = EnemyState.Chase;
+            }
+
+            switch (state)
+            {
+                case EnemyState.Chase:
+                    agent.isStopped = false;
+                    agent.speed = speed;
+                    agent.SetDestination(playerTransform.position);
+                    break;
+
+                case EnemyState.Slow:
+                    agent.isStopped = false;
+                    agent.speed = speed / 10f;
+                    agent.SetDestination(playerTransform.position);
+                    break;
+
+                case EnemyState.Freeze:
+                    agent.isStopped = true;
+                    break;
+            }
         }
-
-        switch (state)
+        else
         {
-            case EnemyState.Chase:
-                agent.isStopped = false;
-                agent.speed = speed;
-                agent.SetDestination(playerTransform.position);
-                break;
+            dissolveAmount += 0.5f * Time.deltaTime;
 
-            case EnemyState.Slow:
-                agent.isStopped = false;
-                agent.speed = speed / 10f;
-                agent.SetDestination(playerTransform.position);
-                break;
-
-            case EnemyState.Freeze:
-                agent.isStopped = true;                            
-                break;
+            dissolveMat.SetFloat("_DissolveAmount", dissolveAmount);
         }
     }
 
@@ -134,8 +152,11 @@ public class EnemyBehaviour : MonoBehaviour
             var pm = playerTransform.GetComponent<PlayerManager>();
             if (pm != null) pm.UpdateLife(pm.life + 2f);
             state = EnemyState.Freeze;
+            agent.isStopped = true;
             isOperational = false;
             monsterAnimator.SetTrigger("Death");
+            GameManager.instance.MonsterDead(monsterID);
+            this.GetComponent<MonsterDeathSFX>().OnDeath();
             Invoke("DestroyItself", 2f);
          //   Destroy(gameObject);
         }

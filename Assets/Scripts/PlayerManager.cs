@@ -12,7 +12,7 @@ public class PlayerManager : MonoBehaviour
     private Vector2 rawInput;
     private Vector2 lerpedInput;
     
-    private float currentMoveSpeed;
+    public float currentMoveSpeed;
     
     public float life = 0.1f;
 
@@ -39,6 +39,12 @@ public class PlayerManager : MonoBehaviour
     public Transform weaponSlot;
 
     public bool isOperational = true;
+    public bool isMoving = false;
+
+    public bool isCranking = false;
+    public AudioClip crankingSound;
+    public AudioClip flashSound;
+    public AudioSource source;
 
     private void Start()
     {
@@ -60,11 +66,13 @@ public class PlayerManager : MonoBehaviour
         {
             rawInput = ctx.ReadValue<Vector2>();
             playerAnimator.SetBool("isMoving", true);
+            isMoving = true;
         }
         if (ctx.canceled)
         {
             rawInput = Vector2.zero;
             playerAnimator.SetBool("isMoving", false);
+            isMoving = false;
         }
     }
     public void OnSprintCtx(InputAction.CallbackContext ctx)
@@ -95,6 +103,15 @@ public class PlayerManager : MonoBehaviour
     
     public void OnFlashLightCtx(InputAction.CallbackContext ctx)
     {
+        if (ctx.performed)
+        {
+            if (!isCranking)
+            {
+                isCranking = true;
+                source.PlayOneShot(crankingSound, 1);
+                Invoke("OnCrankingFinished", crankingSound.length);
+            }
+        }
         //todo insert secondary weapon / flash light flashing
         // if (ctx.performed)
         // {
@@ -105,6 +122,18 @@ public class PlayerManager : MonoBehaviour
         //     isUsingFlashLight = false;
         // }
     }
+    void OnCrankingFinished()
+    {
+        isCranking = false;
+        source.PlayOneShot(flashSound);
+        Invoke("OnFlashFinished", 1.2f);
+        flashLight.intensity *= 10f;
+        //DO FLASH
+    }
+    void OnFlashFinished()
+    {
+        flashLight.intensity /= 10f;
+    }
     public void OnHit()
     {
         FXManager.instance.ShowVignette();
@@ -113,7 +142,7 @@ public class PlayerManager : MonoBehaviour
     
     public void UpdateLife(float life)
     {
-        this.life = life;
+        this.life = Mathf.Min(life, 10f);
         flashLightController.UpdateLife(life);
         
         if (life <= 0 && isOperational)
@@ -132,12 +161,19 @@ public class PlayerManager : MonoBehaviour
 
             Vector3 movement = playerCamTransform.rotation * new Vector3(lerpedInput.x, 0, lerpedInput.y);
 
-            transform.position += movement * (currentMoveSpeed * Time.deltaTime);
+            float angle = this.transform.rotation.eulerAngles.y - 45;
 
-            if (NavMesh.SamplePosition(transform.position, out var hit, 2.0f, NavMesh.AllAreas))
-            {
-                transform.position = hit.position;
-            }
+            Quaternion rotation = Quaternion.AngleAxis(-angle, Vector3.up);
+            Vector3 animInput = rotation * movement;
+
+            float angle2 = 45;
+            Quaternion rotation2 = Quaternion.AngleAxis(-angle2, Vector3.up);
+            Vector3 animInput2 = rotation2 * animInput;
+           
+            playerAnimator.SetFloat("Vx", animInput2.x);
+            playerAnimator.SetFloat("Vz", animInput2.z);
+
+            transform.position += movement * (currentMoveSpeed * Time.deltaTime);
 
             Vector2 m = Mouse.current.position.ReadValue();
 
@@ -157,12 +193,15 @@ public class PlayerManager : MonoBehaviour
 
     void Fire()
     {
-        if (isFiring)
+        if (isOperational)
         {
-            GameObject bullet = Instantiate(Bullet, weaponSlot.transform.position, Quaternion.Euler(0,0,0));
-            bullet.GetComponent<BulletTrigger>().Dammage = Dammage;
-            bullet.GetComponent<Rigidbody>().linearVelocity = this.transform.forward * 10f;
-            bullet.transform.rotation = Quaternion.Euler(90, this.transform.rotation.eulerAngles.y, 0);
+            if (isFiring)
+            {
+                GameObject bullet = Instantiate(Bullet, weaponSlot.transform.position, Quaternion.Euler(0, 0, 0));
+                bullet.GetComponent<BulletTrigger>().Dammage = Dammage;
+                bullet.GetComponent<Rigidbody>().linearVelocity = this.transform.forward * 10f;
+                bullet.transform.rotation = Quaternion.Euler(90, this.transform.rotation.eulerAngles.y, 0);
+            }
         }
     }
 }
