@@ -13,7 +13,7 @@ public class FXManager : MonoBehaviour
 
     public Transform playerTransform;
     public Color toonColor = Color.white;
-    public float coneCutoutRadius = 0.1f;
+    public float coneCutoutRadius = 2.0f;
     public float coneCutoutOffset = 4.0f;
 
     private Volume volume;
