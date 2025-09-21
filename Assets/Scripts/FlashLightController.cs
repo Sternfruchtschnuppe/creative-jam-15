@@ -17,8 +17,8 @@ public class FlashLightController : MonoBehaviour
     public float maxRange = 20.0f;
     
     private Light[] spotLights;
-    private float[] maxIntensities;
-    
+    private static readonly float[] maxIntensities = new float[] { 500f, 100f, 1000f, 5000f, 5000f, 3f };
+
     private Transform playerTransform;
     private LayerMask environmentMask;
     
@@ -30,11 +30,13 @@ public class FlashLightController : MonoBehaviour
         environmentMask = LayerMask.GetMask("Environment");
         
         spotLights = gameObject.GetComponentsInChildren<Light>();
-        maxIntensities = new float[spotLights.Length];
-        for (int i = 0; i < spotLights.Length; i++)
-        {
-            maxIntensities[i] = spotLights[i].intensity;
-        }
+        // maxIntensities = new float[spotLights.Length];
+        // for (int i = 0; i < spotLights.Length; i++)
+        // {
+        //     maxIntensities[i] = spotLights[i].intensity;
+        // }
+        
+        UpdateLife(0f);
     }
     
     private void OnValidate()

@@ -106,6 +106,7 @@ public class PlayerManager : MonoBehaviour
     {
         if (ctx.performed)
         {
+            playerAnimator.SetFloat("isCranking", 1f);
             Lamp.SetActive(false);
             Gun.SetActive(true);
             isUsingFlashLight = false;
@@ -128,6 +129,7 @@ public class PlayerManager : MonoBehaviour
     {
         if (ctx.performed)
         {
+            playerAnimator.SetFloat("isCranking", 0f);
             Lamp.SetActive(true);
             Gun.SetActive(false);
             isUsingFlashLight = false;
@@ -198,8 +200,14 @@ public class PlayerManager : MonoBehaviour
     
     public void UpdateLife(float life)
     {
-        this.life = Mathf.Min(life, 10f);
         flashLightController.UpdateLife(life);
+        
+        if (GameManager.instance.isStartingFromNothing && this.life > life)
+        {
+            return; 
+        }
+        
+        this.life = Mathf.Min(life, 10f);
         
         if (life <= 0 && isOperational)
         {
@@ -259,8 +267,13 @@ public class PlayerManager : MonoBehaviour
                 {
                     if (hit.collider is CapsuleCollider)
                     {
-                        fireDirection = (hit.transform.position + Vector3.up - weaponSlot.transform.position).normalized;
-                        fireRotation = Quaternion.LookRotation(hit.transform.position + Vector3.up - weaponSlot.transform.position, Vector3.up);
+                        var newFireDirection = (hit.transform.position + Vector3.up - weaponSlot.transform.position).normalized;
+                        var newFireRotation = Quaternion.LookRotation(hit.transform.position + Vector3.up - weaponSlot.transform.position, Vector3.up);
+                        if (Vector3.Angle(fireDirection, newFireDirection) < 20f)
+                        {
+                            fireDirection = newFireDirection;
+                            fireRotation = newFireRotation;
+                        }
                     }
                 }
                 // Quaternion.LookRotation(lookAt + Vector3.up - weaponSlot.transform.position)
