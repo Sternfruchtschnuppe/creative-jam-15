@@ -42,9 +42,13 @@ public class PlayerManager : MonoBehaviour
     public bool isMoving = false;
 
     public bool isCranking = false;
-    public AudioClip crankingSound;
+    public bool isFlashing = false;
+    public AudioSource crankingSource;
     public AudioClip flashSound;
     public AudioSource source;
+
+    public GameObject Gun;
+    public GameObject Lamp;
 
     private void Start()
     {
@@ -93,7 +97,17 @@ public class PlayerManager : MonoBehaviour
     {
         if (ctx.performed)
         {
+            Lamp.SetActive(false);
+            Gun.SetActive(true);
+            isUsingFlashLight = false;
+
             isFiring = true;
+            if (isFlashing)
+            {
+                StopCoroutine(StartBigFlash());
+                bigFlashLight.gameObject.SetActive(false);
+            }
+
         }
         if (ctx.canceled)
         {
@@ -105,10 +119,14 @@ public class PlayerManager : MonoBehaviour
     {
         if (ctx.performed)
         {
+            Lamp.SetActive(true);
+            Gun.SetActive(false);
+            isUsingFlashLight = false;
+
             if (!isCranking)
             {
                 isCranking = true;
-                source.PlayOneShot(crankingSound, 1);
+                crankingSource.Play();
                 StartCoroutine(nameof(StartBigFlash));
                 // Invoke("OnCrankingFinished", crankingSound.length);
             }
@@ -126,7 +144,8 @@ public class PlayerManager : MonoBehaviour
 
     IEnumerator StartBigFlash()
     {
-        yield return new WaitForSeconds(crankingSound.length);
+        isFlashing = true;
+        yield return new WaitForSeconds(crankingSource.clip.length / crankingSource.pitch);
         isCranking = false;
         bigFlashLight.gameObject.SetActive(true);
         var maxIntensity = bigFlashLight.intensity;
@@ -141,9 +160,12 @@ public class PlayerManager : MonoBehaviour
             if (Mathf.Approximately(bigFlashLight.intensity, maxIntensity)) break;
             yield return null;
         }
+        isUsingFlashLight = true;
         //flashing
         yield return new WaitForSeconds(1.2f);
         bigFlashLight.gameObject.SetActive(false);
+        isUsingFlashLight = false;
+        isFlashing = false;
     }
     
     // void OnCrankingFinished()

@@ -21,6 +21,10 @@ public class GameManager : MonoBehaviour
     public TMP_Text gameScoreTxt;
     public TMP_Text bestScoreTxt;
 
+    public Image PanelFadeIn;
+
+    public bool isTimingFading;
+    
     private void Awake()
     {
         instance = this;
@@ -36,12 +40,24 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         playerScoreTxt.text = "score: " + score.ToString();
+
+        if (isTimingFading)
+        {
+            if (Time.timeScale > 0.1f)
+            {
+                Time.timeScale -= Time.fixedDeltaTime / 10f;
+            }
+            else
+            {
+                isTimingFading = false;
+                GameOverPanel.SetActive(true);
+            }
+        }
     }
     public void OnGameOver()
     {
-        Time.timeScale = 0.1f;
         paused = true;
-        GameOverPanel.SetActive(true);
+        isTimingFading = true;
 
         int bestscore = PlayerPrefs.GetInt("bestscore", 0);
         if(bestscore < score)
@@ -52,7 +68,10 @@ public class GameManager : MonoBehaviour
         //display stat
         gameScoreTxt.text = "score: " + score.ToString();
         bestScoreTxt.text = "best score: " + bestscore.ToString();
+
+        PanelFadeIn.GetComponent<Animation>().Play();
     }
+
     
     public void RestartGame()
     {

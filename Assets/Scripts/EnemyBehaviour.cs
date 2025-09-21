@@ -36,6 +36,8 @@ public class EnemyBehaviour : MonoBehaviour
     public Material dissolveMat;
 
     public int monsterID;
+
+    public bool slowFlag = false;
     void Start()
     {
         
@@ -60,7 +62,8 @@ public class EnemyBehaviour : MonoBehaviour
             {
                 if (state == EnemyState.Slow) state = EnemyState.Chase;
             }
-
+            if (slowFlag)
+                state = EnemyState.Slow;
             switch (state)
             {
                 case EnemyState.Chase:
@@ -140,7 +143,16 @@ public class EnemyBehaviour : MonoBehaviour
         {
             lastEnteredVisionCone = Time.time;
             state = EnemyState.Slow;
+            slowFlag = true;
+            if (!IsInvoking("OnEndSlowFlag"))
+            {
+                Invoke("OnEndSlowFlag", 4f);
+            }
         }
+    }
+    void OnEndSlowFlag()
+    {
+        slowFlag = false;
     }
 
     public void UpdateLife(float life)
