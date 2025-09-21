@@ -26,6 +26,8 @@ public class GameManager : MonoBehaviour
     public bool isTimingFading;
 
     public bool isStartingFromNothing = true;
+
+    public GameObject door;
     
     private void Awake()
     {
@@ -40,6 +42,7 @@ public class GameManager : MonoBehaviour
         
         player.life = startLife;
         isStartingFromNothing = true;
+        door.gameObject.SetActive(true);
         
         GetComponent<ReducePlayerLifeByTime>().enabled = false;
     }
@@ -85,6 +88,8 @@ public class GameManager : MonoBehaviour
 
         isStartingFromNothing = true;
         GetComponent<ReducePlayerLifeByTime>().enabled = false;
+        door.gameObject.SetActive(true);
+        
         
     }
     
@@ -102,6 +107,7 @@ public class GameManager : MonoBehaviour
     {
         isStartingFromNothing = false;
         GetComponent<ReducePlayerLifeByTime>().enabled = true;
+        door.gameObject.SetActive(false);
     }
     
     public void MonsterDead(int id)
