@@ -193,12 +193,15 @@ public class PlayerManager : MonoBehaviour
 
     void Fire()
     {
-        if (isFiring)
+        if (isOperational)
         {
-            GameObject bullet = Instantiate(Bullet, weaponSlot.transform.position, Quaternion.Euler(0,0,0));
-            bullet.GetComponent<BulletTrigger>().Dammage = Dammage;
-            bullet.GetComponent<Rigidbody>().linearVelocity = this.transform.forward * 10f;
-            bullet.transform.rotation = Quaternion.Euler(90, this.transform.rotation.eulerAngles.y, 0);
+            if (isFiring)
+            {
+                GameObject bullet = Instantiate(Bullet, weaponSlot.transform.position, Quaternion.Euler(0, 0, 0));
+                bullet.GetComponent<BulletTrigger>().Dammage = Dammage;
+                bullet.GetComponent<Rigidbody>().linearVelocity = this.transform.forward * 10f;
+                bullet.transform.rotation = Quaternion.Euler(90, this.transform.rotation.eulerAngles.y, 0);
+            }
         }
     }
 }

@@ -56,11 +56,11 @@ public class GameManager : MonoBehaviour
     
     public void RestartGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
     }
     public void PassiveIncreaseScore()
     {
-        if (this.GetComponent<EnemySpawner>().waveActive)
+        if (this.GetComponent<EnemySpawner>().waveActive && player.isOperational)
         {
             score += 1;
         }
@@ -82,7 +82,7 @@ public class GameManager : MonoBehaviour
     }
     public void Exit()
     {
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadSceneAsync("Menu");
     }
 
 }
