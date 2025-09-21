@@ -47,7 +47,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _DissolveAmount: 0
-    - _DissolveScale: 200
+    - _DissolveScale: 50
     - _HeightScale: 0.2
     - _Max: 1
     - _Min: -1

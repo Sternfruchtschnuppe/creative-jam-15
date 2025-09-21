@@ -244,7 +244,8 @@ public class PlayerManager : MonoBehaviour
         {
             if (isFiring)
             {
-                GameObject bullet = Instantiate(Bullet, weaponSlot.transform.position, Quaternion.Euler(0, 0, 0));
+                // Quaternion.LookRotation(lookAt + Vector3.up - weaponSlot.transform.position)
+                GameObject bullet = Instantiate(Bullet, weaponSlot.transform.position, Quaternion.identity);
                 bullet.GetComponent<BulletTrigger>().Dammage = Dammage;
                 bullet.GetComponent<Rigidbody>().linearVelocity = this.transform.forward * 10f;
                 bullet.transform.rotation = Quaternion.Euler(90, this.transform.rotation.eulerAngles.y, 0);
