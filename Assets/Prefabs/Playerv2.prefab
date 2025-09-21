@@ -64,75 +64,6 @@ Transform:
   - {fileID: 7406917251866698793}
   m_Father: {fileID: 1494631337548249491}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &74235378626758285
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 79206428419738548}
-  - component: {fileID: 665674485589927982}
-  - component: {fileID: 4313670212542136208}
-  m_Layer: 7
-  m_Name: LifeLightTransform
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &79206428419738548
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 74235378626758285}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 4.53, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 5940599330331911996}
-  m_Father: {fileID: 5773647541512568839}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!135 &665674485589927982
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 74235378626758285}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 7
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4313670212542136208
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 74235378626758285}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee84196631a4e0040b0646f734b546c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  range: 7
-  coneRadiusDegrees: 45
 --- !u!1 &115722910243664279
 GameObject:
   m_ObjectHideFlags: 0
@@ -2359,7 +2290,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7826368959452518911}
-  - {fileID: 79206428419738548}
   - {fileID: 5911668447093455462}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5015,6 +4945,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3157534918033361366}
+  - {fileID: 5940599330331911996}
   m_Father: {fileID: 5773647541512568839}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &6580677837029082958
@@ -5034,7 +4965,7 @@ SphereCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Radius: 7
   m_Center: {x: 0, y: 0, z: 0}
@@ -5052,6 +4983,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   range: 7
   coneRadiusDegrees: 45
+  offThreshhold: 1
+  flickerThreshold: 2.5
+  lightMaxIntensity: 1000
+  lightMinIntensity: 200
+  minRange: 3
+  maxRange: 20
+  spotLight: {fileID: 1366061768483585353}
 --- !u!1 &4298150058547561739
 GameObject:
   m_ObjectHideFlags: 0
@@ -5318,7 +5256,7 @@ GameObject:
   - component: {fileID: 1366061768483585353}
   - component: {fileID: 8523648957521914231}
   m_Layer: 7
-  m_Name: Spot Light
+  m_Name: SpotLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5333,7 +5271,7 @@ Transform:
   m_GameObject: {fileID: 4390908230259642081}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: -0.43000036, y: 2.13, z: 0}
+  m_LocalPosition: {x: -0.43000036, y: 0.48, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5350,13 +5288,13 @@ Light:
   serializedVersion: 11
   m_Type: 0
   m_Color: {r: 0.7137255, g: 0.6623789, b: 0.48235294, a: 1}
-  m_Intensity: 157.49
-  m_Range: 8.1
-  m_SpotAngle: 125.11733
-  m_InnerSpotAngle: 121.46429
+  m_Intensity: 200
+  m_Range: 7
+  m_SpotAngle: 76.16421
+  m_InnerSpotAngle: 47.979633
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -5381,7 +5319,7 @@ Light:
       e32: 0
       e33: 1
     m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 0}
+  m_Cookie: {fileID: 2800000, guid: 40351ce717798bb42bf652548b9faa52, type: 3}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
   m_RenderMode: 0
@@ -9656,7 +9594,7 @@ GameObject:
   - component: {fileID: 8403792936478311099}
   - component: {fileID: 6011260858264499760}
   m_Layer: 7
-  m_Name: Spot Light
+  m_Name: PointLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9671,11 +9609,11 @@ Transform:
   m_GameObject: {fileID: 8505320856495296310}
   serializedVersion: 2
   m_LocalRotation: {x: -0.5, y: -0.5, z: 0.5, w: -0.5}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalPosition: {x: -0.5200005, y: 1.9800001, z: -0.02000004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 79206428419738548}
+  m_Father: {fileID: 5911668447093455462}
   m_LocalEulerAnglesHint: {x: 90, y: -270, z: 0}
 --- !u!108 &8403792936478311099
 Light:
@@ -9686,15 +9624,15 @@ Light:
   m_GameObject: {fileID: 8505320856495296310}
   m_Enabled: 1
   serializedVersion: 11
-  m_Type: 0
+  m_Type: 2
   m_Color: {r: 0.7122642, g: 0.62382567, b: 0.48044235, a: 1}
-  m_Intensity: 50
-  m_Range: 100
+  m_Intensity: 8.8
+  m_Range: 2.5
   m_SpotAngle: 112.75091
   m_InnerSpotAngle: 112.75091
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -9719,7 +9657,7 @@ Light:
       e32: 0
       e33: 1
     m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 2800000, guid: de15461a2527aa247b66f703a05a930f, type: 3}
+  m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
   m_RenderMode: 0
