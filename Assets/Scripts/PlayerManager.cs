@@ -53,6 +53,8 @@ public class PlayerManager : MonoBehaviour
     public GameObject Lamp;
 
     private LayerMask enemyLayer;
+
+    public GameObject muzzleFlash;
     
     private void Start()
     {
@@ -68,6 +70,7 @@ public class PlayerManager : MonoBehaviour
         InvokeRepeating("Fire", 0.1f, 0.2f);
         
         enemyLayer = LayerMask.GetMask("Enemy");
+        crankingSource = Lamp.GetComponent<AudioSource>();
     }
 
     public void OnMoveCtx(UnityEngine.InputSystem.InputAction.CallbackContext ctx)
@@ -254,8 +257,11 @@ public class PlayerManager : MonoBehaviour
                 Vector3 fireDirection = transform.forward;
                 if (Physics.Raycast(playerCam.ScreenPointToRay(Input.mousePosition), out RaycastHit hit, Mathf.Infinity, enemyLayer))
                 {
-                    fireDirection = (hit.transform.position + Vector3.up - weaponSlot.transform.position).normalized;
-                    fireRotation = Quaternion.LookRotation(hit.transform.position + Vector3.up - weaponSlot.transform.position, Vector3.up);
+                    if (hit.collider is CapsuleCollider)
+                    {
+                        fireDirection = (hit.transform.position + Vector3.up - weaponSlot.transform.position).normalized;
+                        fireRotation = Quaternion.LookRotation(hit.transform.position + Vector3.up - weaponSlot.transform.position, Vector3.up);
+                    }
                 }
                 // Quaternion.LookRotation(lookAt + Vector3.up - weaponSlot.transform.position)
                 GameObject bullet = Instantiate(Bullet, weaponSlot.transform.position, fireRotation);
@@ -263,7 +269,15 @@ public class PlayerManager : MonoBehaviour
                 bullet.GetComponent<Rigidbody>().linearVelocity = fireDirection * bulletSpeed;
                 bullet.transform.rotation = fireRotation;
                 // bullet.transform.rotation = Quaternion.Euler(90, this.transform.rotation.eulerAngles.y, 0);
+                if (muzzleFlash) StartCoroutine(nameof(MuzzleFlash));
             }
         }
+    }
+
+    IEnumerator MuzzleFlash()
+    {
+        muzzleFlash.gameObject.SetActive(true);
+        yield return new WaitForSeconds(0.05f);
+        muzzleFlash.gameObject.SetActive(false);
     }
 }
