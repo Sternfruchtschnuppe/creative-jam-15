@@ -100,6 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BulletTrigger
   Dammage: 0.5
+  gfx: {fileID: 3292148215520964168}
 --- !u!82 &8720584592039307250
 AudioSource:
   m_ObjectHideFlags: 0
