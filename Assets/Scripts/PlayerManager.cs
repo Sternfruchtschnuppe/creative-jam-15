@@ -55,6 +55,8 @@ public class PlayerManager : MonoBehaviour
     private LayerMask enemyLayer;
 
     public GameObject muzzleFlash;
+
+    public float lampPressedTime;
     
     private void Start()
     {
@@ -129,17 +131,28 @@ public class PlayerManager : MonoBehaviour
     {
         if (ctx.performed)
         {
+            lampPressedTime = Time.time;
             playerAnimator.SetFloat("isCranking", 0f);
             Lamp.SetActive(true);
             Gun.SetActive(false);
             isUsingFlashLight = false;
 
+            crankingSource.Play();
+
             if (!isCranking)
             {
                 isCranking = true;
-                crankingSource.Play();
-                StartCoroutine(nameof(StartBigFlash));
+                
+                
                 // Invoke("OnCrankingFinished", crankingSound.length);
+            }
+        }
+        if (ctx.canceled)
+        {
+            float delay = Time.time - lampPressedTime;
+            if(delay > 3f)
+            {
+                StartCoroutine(nameof(StartBigFlash));
             }
         }
         //todo insert secondary weapon / flash light flashing
@@ -156,7 +169,7 @@ public class PlayerManager : MonoBehaviour
     IEnumerator StartBigFlash()
     {
         isFlashing = true;
-        yield return new WaitForSeconds(crankingSource.clip.length / crankingSource.pitch);
+     //   yield return new WaitForSeconds(crankingSource.clip.length / crankingSource.pitch);
         isCranking = false;
         bigFlashLight.gameObject.SetActive(true);
         var maxIntensity = bigFlashLight.intensity;
