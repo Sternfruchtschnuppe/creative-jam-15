@@ -1,6 +1,5 @@
 using System;
 using TMPro;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -40,6 +39,7 @@ public class GameManager : MonoBehaviour
     }
     public void OnGameOver()
     {
+        Time.timeScale = 0.1f;
         paused = true;
         GameOverPanel.SetActive(true);
 
@@ -78,10 +78,12 @@ public class GameManager : MonoBehaviour
 
     public void Replay()
     {
+        Time.timeScale = 1f;
         RestartGame();
     }
     public void Exit()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadSceneAsync("Menu");
     }
 

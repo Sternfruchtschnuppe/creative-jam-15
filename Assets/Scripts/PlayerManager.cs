@@ -22,6 +22,7 @@ public class PlayerManager : MonoBehaviour
     public Animator playerAnimator;
     
     private FlashLightController flashLightController;
+ //   private FlashLightController flashLightController2;
 
     public bool isFiring;
     public bool isUsingFlashLight;
@@ -45,6 +46,10 @@ public class PlayerManager : MonoBehaviour
     public AudioClip crankingSound;
     public AudioClip flashSound;
     public AudioSource source;
+
+    public GameObject Gun;
+    public GameObject Lamp;
+    public Light LampFlashLight;
 
     private void Start()
     {
@@ -93,18 +98,38 @@ public class PlayerManager : MonoBehaviour
     {
         if (ctx.performed)
         {
+
+
+
             isFiring = true;
+            if (Lamp.activeSelf)
+            {
+                Gun.SetActive(true);
+                Lamp.SetActive(false);
+            }
+
         }
+
         if (ctx.canceled)
         {
             isFiring = false;
         }
     }
-    
+    public void OnSwitchCtx(UnityEngine.InputSystem.InputAction.CallbackContext ctx)
+    {
+        
+    }
+
     public void OnFlashLightCtx(InputAction.CallbackContext ctx)
     {
         if (ctx.performed)
         {
+            if (Gun.activeSelf)
+            {
+                Gun.SetActive(false);
+                Lamp.SetActive(true);
+            }
+
             if (!isCranking)
             {
                 isCranking = true;
@@ -127,12 +152,12 @@ public class PlayerManager : MonoBehaviour
         isCranking = false;
         source.PlayOneShot(flashSound);
         Invoke("OnFlashFinished", 1.2f);
-        flashLight.intensity *= 10f;
+        LampFlashLight.intensity *= 100f;
         //DO FLASH
     }
     void OnFlashFinished()
     {
-        flashLight.intensity /= 10f;
+        LampFlashLight.intensity /= 100f;
     }
     public void OnHit()
     {
