@@ -12,7 +12,7 @@ public class PlayerManager : MonoBehaviour
     private Vector2 rawInput;
     private Vector2 lerpedInput;
     
-    private float currentMoveSpeed;
+    public float currentMoveSpeed;
     
     public float life = 0.1f;
 
@@ -39,7 +39,12 @@ public class PlayerManager : MonoBehaviour
     public Transform weaponSlot;
 
     public bool isOperational = true;
+    public bool isMoving = false;
 
+    public bool isCranking = false;
+    public AudioClip crankingSound;
+    public AudioClip flashSound;
+    public AudioSource source;
 
     private void Start()
     {
@@ -61,11 +66,13 @@ public class PlayerManager : MonoBehaviour
         {
             rawInput = ctx.ReadValue<Vector2>();
             playerAnimator.SetBool("isMoving", true);
+            isMoving = true;
         }
         if (ctx.canceled)
         {
             rawInput = Vector2.zero;
             playerAnimator.SetBool("isMoving", false);
+            isMoving = false;
         }
     }
     public void OnSprintCtx(InputAction.CallbackContext ctx)
@@ -96,6 +103,15 @@ public class PlayerManager : MonoBehaviour
     
     public void OnFlashLightCtx(InputAction.CallbackContext ctx)
     {
+        if (ctx.performed)
+        {
+            if (!isCranking)
+            {
+                isCranking = true;
+                source.PlayOneShot(crankingSound, 1);
+                Invoke("OnCrankingFinished", crankingSound.length);
+            }
+        }
         //todo insert secondary weapon / flash light flashing
         // if (ctx.performed)
         // {
@@ -105,6 +121,18 @@ public class PlayerManager : MonoBehaviour
         // {
         //     isUsingFlashLight = false;
         // }
+    }
+    void OnCrankingFinished()
+    {
+        isCranking = false;
+        source.PlayOneShot(flashSound);
+        Invoke("OnFlashFinished", 1.2f);
+        flashLight.intensity *= 10f;
+        //DO FLASH
+    }
+    void OnFlashFinished()
+    {
+        flashLight.intensity /= 10f;
     }
     public void OnHit()
     {

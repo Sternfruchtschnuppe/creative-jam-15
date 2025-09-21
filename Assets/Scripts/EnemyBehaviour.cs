@@ -156,6 +156,7 @@ public class EnemyBehaviour : MonoBehaviour
             isOperational = false;
             monsterAnimator.SetTrigger("Death");
             GameManager.instance.MonsterDead(monsterID);
+            this.GetComponent<MonsterDeathSFX>().OnDeath();
             Invoke("DestroyItself", 2f);
          //   Destroy(gameObject);
         }
