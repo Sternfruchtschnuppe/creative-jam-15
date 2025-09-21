@@ -13,6 +13,8 @@ public class PlayerManager : MonoBehaviour
     private Vector2 rawInput;
     private Vector2 lerpedInput;
     
+    public float bulletSpeed = 10f;
+    
     public float currentMoveSpeed;
     
     public float life = 0.1f;
@@ -50,6 +52,8 @@ public class PlayerManager : MonoBehaviour
     public GameObject Gun;
     public GameObject Lamp;
 
+    private LayerMask enemyLayer;
+    
     private void Start()
     {
         // lifeLightColor = lifeLight.color;
@@ -62,6 +66,8 @@ public class PlayerManager : MonoBehaviour
 
         currentMoveSpeed = moveSpeed;
         InvokeRepeating("Fire", 0.1f, 0.2f);
+        
+        enemyLayer = LayerMask.GetMask("Enemy");
     }
 
     public void OnMoveCtx(UnityEngine.InputSystem.InputAction.CallbackContext ctx)
@@ -155,14 +161,14 @@ public class PlayerManager : MonoBehaviour
         source.PlayOneShot(flashSound);
         while (true)
         {
-            t += Time.deltaTime * 5f;
+            t += Time.deltaTime * 20f;
             bigFlashLight.intensity = Mathf.Lerp(0f, maxIntensity, t);
             if (Mathf.Approximately(bigFlashLight.intensity, maxIntensity)) break;
             yield return null;
         }
         isUsingFlashLight = true;
         //flashing
-        yield return new WaitForSeconds(1.2f);
+        yield return new WaitForSeconds(0.3f);
         bigFlashLight.gameObject.SetActive(false);
         isUsingFlashLight = false;
         isFlashing = false;
@@ -244,11 +250,19 @@ public class PlayerManager : MonoBehaviour
         {
             if (isFiring)
             {
+                Quaternion fireRotation = transform.rotation;
+                Vector3 fireDirection = transform.forward;
+                if (Physics.Raycast(playerCam.ScreenPointToRay(Input.mousePosition), out RaycastHit hit, Mathf.Infinity, enemyLayer))
+                {
+                    fireDirection = (hit.transform.position + Vector3.up - weaponSlot.transform.position).normalized;
+                    fireRotation = Quaternion.LookRotation(hit.transform.position + Vector3.up - weaponSlot.transform.position, Vector3.up);
+                }
                 // Quaternion.LookRotation(lookAt + Vector3.up - weaponSlot.transform.position)
-                GameObject bullet = Instantiate(Bullet, weaponSlot.transform.position, Quaternion.identity);
+                GameObject bullet = Instantiate(Bullet, weaponSlot.transform.position, fireRotation);
                 bullet.GetComponent<BulletTrigger>().Dammage = Dammage;
-                bullet.GetComponent<Rigidbody>().linearVelocity = this.transform.forward * 10f;
-                bullet.transform.rotation = Quaternion.Euler(90, this.transform.rotation.eulerAngles.y, 0);
+                bullet.GetComponent<Rigidbody>().linearVelocity = fireDirection * bulletSpeed;
+                bullet.transform.rotation = fireRotation;
+                // bullet.transform.rotation = Quaternion.Euler(90, this.transform.rotation.eulerAngles.y, 0);
             }
         }
     }
