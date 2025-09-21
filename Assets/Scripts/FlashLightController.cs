@@ -97,7 +97,12 @@ public class FlashLightController : MonoBehaviour
 
             // spotLight.intensity = lightMinIntensity +  range01 * (lightMaxIntensity - lightMinIntensity);
         }
-        foreach (var s in spotLights) s.range = range * 1.5f;
+
+        for (var i = 0; i < spotLights.Length - 1; i++)
+        {
+            var s = spotLights[i];
+            s.range = range * 1.5f;
+        }
     }
     
     private void OnDrawGizmos()
