@@ -5167,7 +5167,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Charles B\xE9langer"
+  m_text: Charles Belanger
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3e67cae107a3b48849db5d570d32ad93, type: 2}
   m_sharedMaterial: {fileID: 4798627021713660942, guid: 3e67cae107a3b48849db5d570d32ad93, type: 2}
