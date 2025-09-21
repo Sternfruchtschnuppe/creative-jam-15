@@ -40,6 +40,7 @@ public class PlayerManager : MonoBehaviour
 
     public bool isOperational = true;
 
+
     private void Start()
     {
         lifeLightColor = lifeLight.color;
@@ -151,11 +152,24 @@ public class PlayerManager : MonoBehaviour
 
             Vector3 movement = playerCamTransform.rotation * new Vector3(lerpedInput.x, 0, lerpedInput.y);
 
+            float angle = this.transform.rotation.eulerAngles.y - 45;
+
+            Quaternion rotation = Quaternion.AngleAxis(-angle, Vector3.up);
+            Vector3 animInput = rotation * movement;
+
+            float angle2 = 45;
+            Quaternion rotation2 = Quaternion.AngleAxis(-angle2, Vector3.up);
+            Vector3 animInput2 = rotation2 * animInput;
+           
+            playerAnimator.SetFloat("Vx", animInput2.x);
+            playerAnimator.SetFloat("Vz", animInput2.z);
+
             transform.position += movement * (currentMoveSpeed * Time.deltaTime);
 
             if (NavMesh.SamplePosition(transform.position, out var hit, 2.0f, NavMesh.AllAreas))
             {
-                transform.position = new Vector3(transform.position.x, hit.position.y, transform.position.z);
+          //         transform.position = new Vector3(transform.position.x, hit.position.y, transform.position.z);
+              //  transform.position = hit.position;
             }
 
             Vector2 m = Mouse.current.position.ReadValue();
