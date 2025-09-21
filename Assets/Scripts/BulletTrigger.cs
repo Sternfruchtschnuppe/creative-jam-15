@@ -9,6 +9,11 @@ public class BulletTrigger : MonoBehaviour
     {
         if (other.TryGetComponent<EnemyBehaviour>(out var enemy))
         {
+            if (other is not CapsuleCollider)
+            {
+                return;
+            }
+            
             if (enemy.isOperational)
             {
                 enemy.UpdateLife(enemy.life - Dammage);
