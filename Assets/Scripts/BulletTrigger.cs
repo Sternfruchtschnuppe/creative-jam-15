@@ -3,20 +3,17 @@ using UnityEngine;
 public class BulletTrigger : MonoBehaviour
 {
     public float Dammage = 0.5f;
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public GameObject gfx;
+    
     private void OnTriggerEnter(Collider other)
     {
         if (other.TryGetComponent<EnemyBehaviour>(out var enemy))
         {
+            if (other is not CapsuleCollider)
+            {
+                return;
+            }
+            
             if (enemy.isOperational)
             {
                 enemy.UpdateLife(enemy.life - Dammage);
@@ -33,12 +30,12 @@ public class BulletTrigger : MonoBehaviour
     }
     void DestroyItself()
     {
-        Destroy(this.gameObject);
+        Destroy(gameObject, 0.1f);
     }
     public void DisableBullet()
     {
-        this.GetComponent<MeshRenderer>().enabled = false;
-        this.GetComponent<Collider>().enabled = false;
+        gfx.SetActive(false);
+        GetComponent<Collider>().enabled = false;
     }
 }
 
