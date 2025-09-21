@@ -269,7 +269,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2286696415402088155, guid: fbd86bb915dc57c408e8224ee22edce0, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2354527366149143919, guid: fbd86bb915dc57c408e8224ee22edce0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -321,12 +321,32 @@ PrefabInstance:
       objectReference: {fileID: 7826283153296402951}
     - target: {fileID: 3403602309615832591, guid: fbd86bb915dc57c408e8224ee22edce0, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4614591975455283910, guid: fbd86bb915dc57c408e8224ee22edce0, type: 3}
       propertyPath: PanelFadeIn
       value: 
       objectReference: {fileID: 1731537362}
+    - target: {fileID: 6654970664852211410, guid: fbd86bb915dc57c408e8224ee22edce0, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6654970664852211410, guid: fbd86bb915dc57c408e8224ee22edce0, type: 3}
+      propertyPath: m_fontSize
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 6654970664852211410, guid: fbd86bb915dc57c408e8224ee22edce0, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 993c6d8ef5348bf459d9bc962638a6b1, type: 2}
+    - target: {fileID: 6654970664852211410, guid: fbd86bb915dc57c408e8224ee22edce0, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -7528751846984309896, guid: 993c6d8ef5348bf459d9bc962638a6b1, type: 2}
+    - target: {fileID: 6654970664852211410, guid: fbd86bb915dc57c408e8224ee22edce0, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7027857168417101575, guid: fbd86bb915dc57c408e8224ee22edce0, type: 3}
       propertyPath: m_Volume
       value: 0.5
