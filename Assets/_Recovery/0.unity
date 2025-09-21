@@ -119,6 +119,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &23659748 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3122007235143976935, guid: fbd86bb915dc57c408e8224ee22edce0, type: 3}
+  m_PrefabInstance: {fileID: 205912260}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1 &203844586
 GameObject:
   m_ObjectHideFlags: 0
@@ -298,10 +309,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3403602309615832591, guid: fbd86bb915dc57c408e8224ee22edce0, type: 3}
-      propertyPath: cam
+    - target: {fileID: 4614591975455283910, guid: fbd86bb915dc57c408e8224ee22edce0, type: 3}
+      propertyPath: gameScoreTxt
       value: 
-      objectReference: {fileID: 7826283153296402951}
+      objectReference: {fileID: 23659748}
+    - target: {fileID: 4614591975455283910, guid: fbd86bb915dc57c408e8224ee22edce0, type: 3}
+      propertyPath: playerScoreTxt
+      value: 
+      objectReference: {fileID: 880604355}
     - target: {fileID: 8278575148398402391, guid: fbd86bb915dc57c408e8224ee22edce0, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -373,6 +388,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &880604355 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4338348886457721177, guid: fbd86bb915dc57c408e8224ee22edce0, type: 3}
+  m_PrefabInstance: {fileID: 205912260}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1 &1010116080
 GameObject:
   m_ObjectHideFlags: 0
@@ -982,11 +1008,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b2b85e0de313844a9e3ebc402c5bed5, type: 3}
---- !u!20 &7826283153296402951 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 4447325961351623207, guid: 3b2b85e0de313844a9e3ebc402c5bed5, type: 3}
-  m_PrefabInstance: {fileID: 7826283153296402950}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

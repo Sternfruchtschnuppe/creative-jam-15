@@ -27,6 +27,18 @@ public class BulletTrigger : MonoBehaviour
             }
             
         }
+        Invoke("DestroyItself", 2f);
+        DisableBullet();
+        
+    }
+    void DestroyItself()
+    {
         Destroy(this.gameObject);
     }
+    public void DisableBullet()
+    {
+        this.GetComponent<MeshRenderer>().enabled = false;
+        this.GetComponent<Collider>().enabled = false;
+    }
 }
+

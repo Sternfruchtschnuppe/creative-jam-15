@@ -24,14 +24,19 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
-        player = FindFirstObjectByType<PlayerManager>();
-        player.life = startLife;
+        
     }
     private void Start()
     {
-        InvokeRepeating("PassiveIncreaseScore", 0.1f, 0.05f);  
-    }
+        InvokeRepeating("PassiveIncreaseScore", 0.1f, 0.05f);
 
+        player = FindFirstObjectByType<PlayerManager>();
+        player.life = startLife;
+    }
+    private void Update()
+    {
+        playerScoreTxt.text = "score: " + score.ToString();
+    }
     public void OnGameOver()
     {
         paused = true;
@@ -54,8 +59,20 @@ public class GameManager : MonoBehaviour
     }
     public void PassiveIncreaseScore()
     {
-        score += 1;
-        playerScoreTxt.text = "score: " + score.ToString();
+        if (this.GetComponent<EnemySpawner>().waveActive)
+        {
+            score += 1;
+        }
+    }
+    public void MonsterDead(int id)
+    {
+        // progression quadratique avec le niveau
+        score += 50 * (id + 1) * (id + 1);
+    }
+    public void WaveTerminated(int num)
+    {
+        // progression quadratique de la vague
+        score += 200 * (num + 1) * (num + 1);
     }
 
     public void Replay()

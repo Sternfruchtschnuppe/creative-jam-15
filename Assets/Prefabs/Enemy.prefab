@@ -11595,6 +11595,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   state: 0
   damage: 1
+  speed: 3.5
   scaredTime: 0.5
   attackCooldown: 2
   life: 2
@@ -14945,7 +14946,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 4191205992791713203, guid: 29cd089cbf1b8644eaacd5c1a61e765a, type: 3}
+  - {fileID: 2100000, guid: 700c853a134027543ad98cc4698635ea, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

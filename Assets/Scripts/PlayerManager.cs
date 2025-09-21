@@ -114,7 +114,7 @@ public class PlayerManager : MonoBehaviour
     
     public void UpdateLife(float life)
     {
-        this.life = life;
+        this.life = Mathf.Min(life, 10f);
         flashLightController.UpdateLife(life);
         
         if (life <= 0 && isOperational)
@@ -146,12 +146,6 @@ public class PlayerManager : MonoBehaviour
             playerAnimator.SetFloat("Vz", animInput2.z);
 
             transform.position += movement * (currentMoveSpeed * Time.deltaTime);
-
-            if (NavMesh.SamplePosition(transform.position, out var hit, 2.0f, NavMesh.AllAreas))
-            {
-          //         transform.position = new Vector3(transform.position.x, hit.position.y, transform.position.z);
-              //  transform.position = hit.position;
-            }
 
             Vector2 m = Mouse.current.position.ReadValue();
 

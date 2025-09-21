@@ -334,6 +334,7 @@ Transform:
   - {fileID: 8440527656715119545}
   - {fileID: 586502210401449905}
   - {fileID: 8826357090995582372}
+  - {fileID: 6055069156311219740}
   m_Father: {fileID: 1359145656199899553}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1568036755094594466
@@ -548,7 +549,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1283266493808981498
 Transform:
   m_ObjectHideFlags: 0
@@ -600,6 +601,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   range: 7
   coneRadiusDegrees: 45
+  offThreshhold: 1
+  flickerThreshold: 2.5
+  lightMaxIntensity: 1000
+  lightMinIntensity: 200
+  minRange: 3
+  maxRange: 20
+  spotLight: {fileID: 0}
 --- !u!1 &2290438498714099239
 GameObject:
   m_ObjectHideFlags: 0
@@ -701,6 +709,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   range: 7
   coneRadiusDegrees: 45
+  offThreshhold: 1
+  flickerThreshold: 2.5
+  lightMaxIntensity: 1000
+  lightMinIntensity: 200
+  minRange: 3
+  maxRange: 20
+  spotLight: {fileID: 2520597212179503174}
 --- !u!1 &2511329274180945172
 GameObject:
   m_ObjectHideFlags: 0
@@ -921,7 +936,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 4422308485560857571}
+  m_Father: {fileID: 7545679573388447041}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2885522210596638065
 GameObject:
@@ -1659,7 +1674,6 @@ GameObject:
   - component: {fileID: 3333727439084239537}
   - component: {fileID: 7823137965114809746}
   - component: {fileID: 9206047432144330022}
-  - component: {fileID: 4962714504478894408}
   m_Layer: 7
   m_Name: Playerv3
   m_TagString: Player
@@ -1683,7 +1697,6 @@ Transform:
   - {fileID: 5463024785984462530}
   - {fileID: 1283266493808981498}
   - {fileID: 1123156747010635419}
-  - {fileID: 6055069156311219740}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2942428145041096241
@@ -1712,6 +1725,7 @@ MonoBehaviour:
   lifeLightColor: {r: 1, g: 0.89439124, b: 0.5896226, a: 0}
   lifeLightColorRed: {r: 1, g: 0.49056602, b: 0.49056602, a: 0}
   weaponSlot: {fileID: 6055069156311219740}
+  isOperational: 1
 --- !u!54 &3333727439084239537
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1737,7 +1751,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!114 &7823137965114809746
 MonoBehaviour:
@@ -1917,32 +1931,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
-  m_Height: 2.0944204
+  m_Height: 2.035267
   m_Direction: 1
-  m_Center: {x: 0, y: 0.98330593, z: 0}
---- !u!136 &4962714504478894408
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4970202887232831370}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2.0944204
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.98330593, z: 0}
+  m_Center: {x: 0, y: 1.0128826, z: 0}
 --- !u!1 &5055317450792514406
 GameObject:
   m_ObjectHideFlags: 0
