@@ -171,6 +171,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConveyerBelt_4x4 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5895329379036034136, guid: 5022477a974fa0f4ea539d6958d69537, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -192,6 +196,10 @@ PrefabInstance:
     - target: {fileID: 6547754752973701076, guid: b3a8b40965a1736408e7082f0ad57b4c, type: 3}
       propertyPath: m_Name
       value: Trash_Can_Rust (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6547754752973701076, guid: b3a8b40965a1736408e7082f0ad57b4c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7586591940400826446, guid: b3a8b40965a1736408e7082f0ad57b4c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -983,7 +991,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ac46ccc1de27d2441866a492f54ffa75, type: 2}
+  - {fileID: 2100000, guid: d76b45d8894868540a82e69240a3d4ed, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1061,6 +1069,10 @@ PrefabInstance:
     - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_Name
       value: Crate (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1164,6 +1176,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trash_Can_No_Bag (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6390278615144252921, guid: 8c671eef465dd8944bc37627987c7a99, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4976059204709205686, guid: 8c671eef465dd8944bc37627987c7a99, type: 3}
     m_RemovedGameObjects: []
@@ -1224,6 +1240,10 @@ PrefabInstance:
     - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
       propertyPath: m_Name
       value: Palette_bois_01 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1620,6 +1640,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Palette_bois_01 (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1747,6 +1771,10 @@ PrefabInstance:
     - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_Name
       value: Crate (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2619,7 +2647,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ac46ccc1de27d2441866a492f54ffa75, type: 2}
+  - {fileID: 2100000, guid: 5d04e31a9d730274899b2bacaa13a43a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2737,6 +2765,10 @@ PrefabInstance:
     - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
       propertyPath: m_Name
       value: Palette_bois_01 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2977,6 +3009,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15.100826
@@ -3078,6 +3114,10 @@ PrefabInstance:
     - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
       propertyPath: m_Name
       value: Palette_bois_01 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3990,6 +4030,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Belt_Cover_Var_1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1897616004512241861, guid: aeff251a8b88fd14ca296070955abbfc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5980629887379108047, guid: aeff251a8b88fd14ca296070955abbfc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.5359879
@@ -4046,6 +4090,10 @@ PrefabInstance:
     - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_Name
       value: Crate (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalScale.x
@@ -6445,6 +6493,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trash_Can_Rust (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 6547754752973701076, guid: b3a8b40965a1736408e7082f0ad57b4c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7586591940400826446, guid: b3a8b40965a1736408e7082f0ad57b4c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.8630085
@@ -6689,6 +6741,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConveyerBelt_4x4
       objectReference: {fileID: 0}
+    - target: {fileID: 5895329379036034136, guid: 5022477a974fa0f4ea539d6958d69537, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6710,6 +6766,10 @@ PrefabInstance:
     - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_Name
       value: Crate (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7882,6 +7942,10 @@ PrefabInstance:
     - target: {fileID: 2524294674658235147, guid: 83eac96a424da8f4da053f2f2001b5ed, type: 3}
       propertyPath: m_Name
       value: Trash_Can_No_Bag_Rust (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2524294674658235147, guid: 83eac96a424da8f4da053f2f2001b5ed, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7893797691544392225, guid: 83eac96a424da8f4da053f2f2001b5ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9318,6 +9382,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Palette_bois_01 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9485,6 +9553,10 @@ PrefabInstance:
     - target: {fileID: 5895329379036034136, guid: 5022477a974fa0f4ea539d6958d69537, type: 3}
       propertyPath: m_Name
       value: ConveyerBelt_4x4 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5895329379036034136, guid: 5022477a974fa0f4ea539d6958d69537, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9654,6 +9726,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Palette_bois_01 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9710,6 +9786,10 @@ PrefabInstance:
     - target: {fileID: 2199533990038437057, guid: c970c2346beb8794694e74276834e6d8, type: 3}
       propertyPath: m_Name
       value: SM_Vate_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2199533990038437057, guid: c970c2346beb8794694e74276834e6d8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9884,6 +9964,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Palette_bois_01 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9940,6 +10024,10 @@ PrefabInstance:
     - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
       propertyPath: m_Name
       value: Palette_bois_01 (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10897,6 +10985,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trash_Can_No_Bag (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 6390278615144252921, guid: 8c671eef465dd8944bc37627987c7a99, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4976059204709205686, guid: 8c671eef465dd8944bc37627987c7a99, type: 3}
     m_RemovedGameObjects: []
@@ -11105,6 +11197,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Palette_bois_01 (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11161,6 +11257,10 @@ PrefabInstance:
     - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
       propertyPath: m_Name
       value: Palette_bois_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11389,6 +11489,63 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4, y: 3.9999995, z: 1.4999998}
   m_Center: {x: -2, y: -2.0000017, z: -0.7499999}
+--- !u!1001 &275502945
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -25.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.10000014
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 13.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.08538039
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7844072
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.29177156
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5406338
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7576936788384639896, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_Name
+      value: Debris_Rock_01 (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
 --- !u!1 &276141209
 GameObject:
   m_ObjectHideFlags: 0
@@ -11511,6 +11668,10 @@ PrefabInstance:
     - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_Name
       value: Crate (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11947,6 +12108,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Vate_01 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2199533990038437057, guid: c970c2346beb8794694e74276834e6d8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12008,6 +12173,10 @@ PrefabInstance:
     - target: {fileID: 5895329379036034136, guid: 5022477a974fa0f4ea539d6958d69537, type: 3}
       propertyPath: m_Name
       value: ConveyerBelt_4x4 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5895329379036034136, guid: 5022477a974fa0f4ea539d6958d69537, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12723,6 +12892,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.920021
@@ -13366,6 +13539,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.87742
@@ -13756,6 +13933,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stairs (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1548234433838644256, guid: 1e3c75cd8f2fac74a97479e0479214af, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2177419704728725146, guid: 1e3c75cd8f2fac74a97479e0479214af, type: 3}
       propertyPath: m_LocalPosition.x
       value: 23.977404
@@ -13816,6 +13997,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.69849
@@ -13866,6 +14051,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5452861030250788773, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
   m_PrefabInstance: {fileID: 227095005}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &316372804
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 24.9795
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.5000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 48.934914
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.08538039
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7844072
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.29177156
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5406338
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7576936788384639896, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_Name
+      value: Debris_Rock_01 (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
 --- !u!4 &316523240 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5452861030250788773, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
@@ -14041,7 +14283,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ac46ccc1de27d2441866a492f54ffa75, type: 2}
+  - {fileID: 2100000, guid: 5d04e31a9d730274899b2bacaa13a43a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14104,6 +14346,10 @@ PrefabInstance:
     - target: {fileID: 2524294674658235147, guid: 83eac96a424da8f4da053f2f2001b5ed, type: 3}
       propertyPath: m_Name
       value: Trash_Can_No_Bag_Rust (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2524294674658235147, guid: 83eac96a424da8f4da053f2f2001b5ed, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7893797691544392225, guid: 83eac96a424da8f4da053f2f2001b5ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14265,6 +14511,63 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 327736188}
   m_Mesh: {fileID: 2977981768884665668, guid: 66a2e99317d928149a0c21e63ad4c16a, type: 3}
+--- !u!1001 &328754239
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 21.470139
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 64.13765
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.08538039
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7844072
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.29177156
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5406338
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7576936788384639896, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_Name
+      value: Debris_Rock_01 (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
 --- !u!4 &330760722 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5443416545702126042, guid: 5022477a974fa0f4ea539d6958d69537, type: 3}
@@ -14321,6 +14624,10 @@ PrefabInstance:
     - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
       propertyPath: m_Name
       value: Palette_bois_01 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15983,6 +16290,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trash_Can_Rust (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6547754752973701076, guid: b3a8b40965a1736408e7082f0ad57b4c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7586591940400826446, guid: b3a8b40965a1736408e7082f0ad57b4c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.690058
@@ -16279,6 +16590,10 @@ PrefabInstance:
     - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_Name
       value: Crate (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16813,7 +17128,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ac46ccc1de27d2441866a492f54ffa75, type: 2}
+  - {fileID: 2100000, guid: 5d04e31a9d730274899b2bacaa13a43a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17185,6 +17500,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Belt_Cover_Var_2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5495433248150680492, guid: a24849873a07b714eb69820f9f4880b7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17241,6 +17560,10 @@ PrefabInstance:
     - target: {fileID: 5895329379036034136, guid: 5022477a974fa0f4ea539d6958d69537, type: 3}
       propertyPath: m_Name
       value: ConveyerBelt_4x4 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5895329379036034136, guid: 5022477a974fa0f4ea539d6958d69537, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17585,6 +17908,75 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5452861030250788773, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
   m_PrefabInstance: {fileID: 441729064}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &404019790
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4666500300195239851, guid: e33952172d93f89448ee913f7466c5a6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.12170368
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666500300195239851, guid: e33952172d93f89448ee913f7466c5a6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.12170368
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666500300195239851, guid: e33952172d93f89448ee913f7466c5a6, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.121703655
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666500300195239851, guid: e33952172d93f89448ee913f7466c5a6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.425
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666500300195239851, guid: e33952172d93f89448ee913f7466c5a6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.073
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666500300195239851, guid: e33952172d93f89448ee913f7466c5a6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 49.407284
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666500300195239851, guid: e33952172d93f89448ee913f7466c5a6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0036093704
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666500300195239851, guid: e33952172d93f89448ee913f7466c5a6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.50872743
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666500300195239851, guid: e33952172d93f89448ee913f7466c5a6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.75941473
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666500300195239851, guid: e33952172d93f89448ee913f7466c5a6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.4055523
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666500300195239851, guid: e33952172d93f89448ee913f7466c5a6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666500300195239851, guid: e33952172d93f89448ee913f7466c5a6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666500300195239851, guid: e33952172d93f89448ee913f7466c5a6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6683125586573035707, guid: e33952172d93f89448ee913f7466c5a6, type: 3}
+      propertyPath: m_Name
+      value: Debris_Rock_04
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e33952172d93f89448ee913f7466c5a6, type: 3}
 --- !u!1 &406143196
 GameObject:
   m_ObjectHideFlags: 0
@@ -19334,6 +19726,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Palette_bois_01 (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20368,6 +20764,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trash_Can (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 9069417578007120335, guid: 756f239431c8976429d49ad137246d09, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2266349249599545237, guid: 756f239431c8976429d49ad137246d09, type: 3}
     m_RemovedGameObjects: []
@@ -20671,6 +21071,7 @@ Transform:
   - {fileID: 327736189}
   - {fileID: 2016289217}
   - {fileID: 1258852033}
+  - {fileID: 1249866950}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &471536416
@@ -21057,6 +21458,10 @@ PrefabInstance:
     - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
       propertyPath: m_Name
       value: Palette_bois_01 (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21538,6 +21943,10 @@ PrefabInstance:
     - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_Name
       value: Crate (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22529,6 +22938,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trash_Can_No_Bag (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 6390278615144252921, guid: 8c671eef465dd8944bc37627987c7a99, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4976059204709205686, guid: 8c671eef465dd8944bc37627987c7a99, type: 3}
     m_RemovedGameObjects: []
@@ -22620,6 +23033,10 @@ PrefabInstance:
     - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
       propertyPath: m_Name
       value: Palette_bois_01 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22789,6 +23206,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trash_Can_No_Bag (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 6390278615144252921, guid: 8c671eef465dd8944bc37627987c7a99, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4976059204709205686, guid: 8c671eef465dd8944bc37627987c7a99, type: 3}
     m_RemovedGameObjects: []
@@ -22880,6 +23301,10 @@ PrefabInstance:
     - target: {fileID: 9069417578007120335, guid: 756f239431c8976429d49ad137246d09, type: 3}
       propertyPath: m_Name
       value: Trash_Can (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9069417578007120335, guid: 756f239431c8976429d49ad137246d09, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2266349249599545237, guid: 756f239431c8976429d49ad137246d09, type: 3}
@@ -22973,6 +23398,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trash_Can (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 9069417578007120335, guid: 756f239431c8976429d49ad137246d09, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2266349249599545237, guid: 756f239431c8976429d49ad137246d09, type: 3}
     m_RemovedGameObjects: []
@@ -22998,6 +23427,10 @@ PrefabInstance:
     - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_Name
       value: Crate
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalScale.x
@@ -23773,6 +24206,10 @@ PrefabInstance:
     - target: {fileID: 5895329379036034136, guid: 5022477a974fa0f4ea539d6958d69537, type: 3}
       propertyPath: m_Name
       value: ConveyerBelt_4x4 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5895329379036034136, guid: 5022477a974fa0f4ea539d6958d69537, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24686,6 +25123,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cylindrical_Wheel_Machine1_ (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2537913472507231484, guid: d3ee01caf56a2a2468a0b67ab7333a18, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 6482287189440848298, guid: d3ee01caf56a2a2468a0b67ab7333a18, type: 3}
       propertyPath: m_LocalPosition.x
       value: 52.429268
@@ -25344,6 +25785,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Palette_bois_01 (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25406,6 +25851,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Palette_bois_01 (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25422,6 +25871,10 @@ PrefabInstance:
     - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_Name
       value: Crate (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -26444,6 +26897,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Palette_bois_01 (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26501,6 +26958,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Vate_01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2199533990038437057, guid: c970c2346beb8794694e74276834e6d8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26522,6 +26983,10 @@ PrefabInstance:
     - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_Name
       value: Crate (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -26730,6 +27195,10 @@ PrefabInstance:
     - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
       propertyPath: m_Name
       value: Palette_bois_01 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -27232,6 +27701,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trash_Can_No_Bag (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6390278615144252921, guid: 8c671eef465dd8944bc37627987c7a99, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4976059204709205686, guid: 8c671eef465dd8944bc37627987c7a99, type: 3}
     m_RemovedGameObjects: []
@@ -27283,6 +27756,10 @@ PrefabInstance:
     - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_Name
       value: Crate (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -27945,6 +28422,10 @@ PrefabInstance:
     - target: {fileID: 7104867020719970394, guid: bedba0ab009fdbd4b8a4f7df82a8c759, type: 3}
       propertyPath: m_Name
       value: Palette_bois_03 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7104867020719970394, guid: bedba0ab009fdbd4b8a4f7df82a8c759, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -29587,6 +30068,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coveyer_belt_90 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7687812257003929401, guid: 52f5c953e613db444a7a18fc0ad2ea64, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29845,6 +30330,10 @@ PrefabInstance:
     - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_Name
       value: Crate (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -30462,6 +30951,10 @@ PrefabInstance:
     - target: {fileID: 7356487241517310155, guid: 3316171f29f2de642ac0ba090f253406, type: 3}
       propertyPath: m_Name
       value: Centrifuge
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356487241517310155, guid: 3316171f29f2de642ac0ba090f253406, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7880365346658810481, guid: 3316171f29f2de642ac0ba090f253406, type: 3}
       propertyPath: m_LocalPosition.x
@@ -32015,7 +32508,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ac46ccc1de27d2441866a492f54ffa75, type: 2}
+  - {fileID: 2100000, guid: 5d04e31a9d730274899b2bacaa13a43a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -32345,6 +32838,10 @@ PrefabInstance:
     - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
       propertyPath: m_Name
       value: Palette_bois_01 (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -33251,6 +33748,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cylindrical_Wheel_Machine1_1
       objectReference: {fileID: 0}
+    - target: {fileID: 3700080706252993213, guid: 9ff6a3bc725be9c4dbd567d3725040d0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7186084171313823621, guid: 9ff6a3bc725be9c4dbd567d3725040d0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 34.07
@@ -33751,6 +34252,10 @@ PrefabInstance:
     - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_Name
       value: Crate (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -34419,6 +34924,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Palette_bois_01 (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -34586,6 +35095,10 @@ PrefabInstance:
     - target: {fileID: 2122245789441844081, guid: bc8186f24523db3439dd82be9921f754, type: 3}
       propertyPath: m_Name
       value: ConveyerBelt_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2122245789441844081, guid: bc8186f24523db3439dd82be9921f754, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -34981,6 +35494,10 @@ PrefabInstance:
     - target: {fileID: 2122245789441844081, guid: bc8186f24523db3439dd82be9921f754, type: 3}
       propertyPath: m_Name
       value: ConveyerBelt_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2122245789441844081, guid: bc8186f24523db3439dd82be9921f754, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -36080,6 +36597,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Palette_bois_03
       objectReference: {fileID: 0}
+    - target: {fileID: 7104867020719970394, guid: bedba0ab009fdbd4b8a4f7df82a8c759, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -36767,6 +37288,10 @@ PrefabInstance:
     - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_Name
       value: Crate (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalScale.x
@@ -37548,6 +38073,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Palette_bois_01 (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -37605,6 +38134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Palette_bois_01 (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -37654,7 +38187,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ac46ccc1de27d2441866a492f54ffa75, type: 2}
+  - {fileID: 2100000, guid: 5d04e31a9d730274899b2bacaa13a43a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -39115,6 +39648,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Palette_bois_01 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -39131,6 +39668,10 @@ PrefabInstance:
     - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_Name
       value: Crate (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -39193,6 +39734,10 @@ PrefabInstance:
     - target: {fileID: 1897616004512241861, guid: aeff251a8b88fd14ca296070955abbfc, type: 3}
       propertyPath: m_Name
       value: Belt_Cover_Var_1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1897616004512241861, guid: aeff251a8b88fd14ca296070955abbfc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5980629887379108047, guid: aeff251a8b88fd14ca296070955abbfc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -39583,6 +40128,10 @@ PrefabInstance:
     - target: {fileID: 7356487241517310155, guid: 3316171f29f2de642ac0ba090f253406, type: 3}
       propertyPath: m_Name
       value: Centrifuge (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356487241517310155, guid: 3316171f29f2de642ac0ba090f253406, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7880365346658810481, guid: 3316171f29f2de642ac0ba090f253406, type: 3}
       propertyPath: m_LocalScale.x
@@ -40475,6 +41024,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Palette_bois_01 (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -40753,6 +41306,10 @@ PrefabInstance:
     - target: {fileID: 5895329379036034136, guid: 5022477a974fa0f4ea539d6958d69537, type: 3}
       propertyPath: m_Name
       value: ConveyerBelt_4x4 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5895329379036034136, guid: 5022477a974fa0f4ea539d6958d69537, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -41326,6 +41883,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.5991383
@@ -41760,6 +42321,10 @@ PrefabInstance:
     - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
       propertyPath: m_Name
       value: Palette_bois_01 (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -42262,6 +42827,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConveyerBelt_4x4 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 5895329379036034136, guid: 5022477a974fa0f4ea539d6958d69537, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -42430,6 +42999,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Palette_bois_01 (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -42563,6 +43136,10 @@ PrefabInstance:
     - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_Name
       value: Crate (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -43009,6 +43586,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Palette_bois_01 (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -43025,6 +43606,10 @@ PrefabInstance:
     - target: {fileID: 2524294674658235147, guid: 83eac96a424da8f4da053f2f2001b5ed, type: 3}
       propertyPath: m_Name
       value: Trash_Can_No_Bag_Rust
+      objectReference: {fileID: 0}
+    - target: {fileID: 2524294674658235147, guid: 83eac96a424da8f4da053f2f2001b5ed, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7893797691544392225, guid: 83eac96a424da8f4da053f2f2001b5ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -43117,6 +43702,10 @@ PrefabInstance:
     - target: {fileID: 2537913472507231484, guid: d3ee01caf56a2a2468a0b67ab7333a18, type: 3}
       propertyPath: m_Name
       value: Cylindrical_Wheel_Machine1_ (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2537913472507231484, guid: d3ee01caf56a2a2468a0b67ab7333a18, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6482287189440848298, guid: d3ee01caf56a2a2468a0b67ab7333a18, type: 3}
       propertyPath: m_LocalPosition.x
@@ -43624,6 +44213,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 24.015682
@@ -44059,6 +44652,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Palette_bois_01 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -44187,6 +44784,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.81615
@@ -44256,6 +44857,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 22.875252
@@ -44317,6 +44922,10 @@ PrefabInstance:
     - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_Name
       value: Crate (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -45204,7 +45813,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ac46ccc1de27d2441866a492f54ffa75, type: 2}
+  - {fileID: 2100000, guid: 5d04e31a9d730274899b2bacaa13a43a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -46116,6 +46725,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trash_Can (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 9069417578007120335, guid: 756f239431c8976429d49ad137246d09, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2266349249599545237, guid: 756f239431c8976429d49ad137246d09, type: 3}
     m_RemovedGameObjects: []
@@ -46541,6 +47154,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Vate_01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2199533990038437057, guid: c970c2346beb8794694e74276834e6d8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -46557,6 +47174,10 @@ PrefabInstance:
     - target: {fileID: 6547754752973701076, guid: b3a8b40965a1736408e7082f0ad57b4c, type: 3}
       propertyPath: m_Name
       value: Trash_Can_Rust
+      objectReference: {fileID: 0}
+    - target: {fileID: 6547754752973701076, guid: b3a8b40965a1736408e7082f0ad57b4c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7586591940400826446, guid: b3a8b40965a1736408e7082f0ad57b4c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -46690,6 +47311,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trash_Can_No_Bag (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 6390278615144252921, guid: 8c671eef465dd8944bc37627987c7a99, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4976059204709205686, guid: 8c671eef465dd8944bc37627987c7a99, type: 3}
     m_RemovedGameObjects: []
@@ -46781,6 +47406,10 @@ PrefabInstance:
     - target: {fileID: 2199533990038437057, guid: c970c2346beb8794694e74276834e6d8, type: 3}
       propertyPath: m_Name
       value: SM_Vate_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2199533990038437057, guid: c970c2346beb8794694e74276834e6d8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -47177,6 +47806,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Palette_bois_01 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -47416,6 +48049,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Centrifuge (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7356487241517310155, guid: 3316171f29f2de642ac0ba090f253406, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7880365346658810481, guid: 3316171f29f2de642ac0ba090f253406, type: 3}
       propertyPath: m_LocalPosition.x
       value: 19.794094
@@ -47525,7 +48162,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ac46ccc1de27d2441866a492f54ffa75, type: 2}
+  - {fileID: 2100000, guid: 5d04e31a9d730274899b2bacaa13a43a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -47588,6 +48225,10 @@ PrefabInstance:
     - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_Name
       value: Crate (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalScale.x
@@ -47808,6 +48449,10 @@ PrefabInstance:
     - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
       propertyPath: m_Name
       value: Palette_bois_01 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -48087,6 +48732,10 @@ PrefabInstance:
     - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
       propertyPath: m_Name
       value: Palette_bois_01 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -49247,7 +49896,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ac46ccc1de27d2441866a492f54ffa75, type: 2}
+  - {fileID: 2100000, guid: 5d04e31a9d730274899b2bacaa13a43a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -49365,6 +50014,10 @@ PrefabInstance:
     - target: {fileID: 5895329379036034136, guid: 5022477a974fa0f4ea539d6958d69537, type: 3}
       propertyPath: m_Name
       value: ConveyerBelt_4x4 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5895329379036034136, guid: 5022477a974fa0f4ea539d6958d69537, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -49539,6 +50192,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trash_Can_No_Bag (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6390278615144252921, guid: 8c671eef465dd8944bc37627987c7a99, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4976059204709205686, guid: 8c671eef465dd8944bc37627987c7a99, type: 3}
     m_RemovedGameObjects: []
@@ -49564,6 +50221,10 @@ PrefabInstance:
     - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_Name
       value: Crate (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -49610,6 +50271,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+--- !u!1001 &1216214754
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4666500300195239851, guid: e33952172d93f89448ee913f7466c5a6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -29.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666500300195239851, guid: e33952172d93f89448ee913f7466c5a6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666500300195239851, guid: e33952172d93f89448ee913f7466c5a6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 58.877502
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666500300195239851, guid: e33952172d93f89448ee913f7466c5a6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0036093704
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666500300195239851, guid: e33952172d93f89448ee913f7466c5a6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.50872743
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666500300195239851, guid: e33952172d93f89448ee913f7466c5a6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.75941473
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666500300195239851, guid: e33952172d93f89448ee913f7466c5a6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.4055523
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666500300195239851, guid: e33952172d93f89448ee913f7466c5a6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666500300195239851, guid: e33952172d93f89448ee913f7466c5a6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666500300195239851, guid: e33952172d93f89448ee913f7466c5a6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6683125586573035707, guid: e33952172d93f89448ee913f7466c5a6, type: 3}
+      propertyPath: m_Name
+      value: Debris_Rock_04 (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e33952172d93f89448ee913f7466c5a6, type: 3}
 --- !u!1001 &1224728076
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49621,6 +50339,10 @@ PrefabInstance:
     - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_Name
       value: Crate (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -49723,6 +50445,10 @@ PrefabInstance:
     - target: {fileID: 6390278615144252921, guid: 8c671eef465dd8944bc37627987c7a99, type: 3}
       propertyPath: m_Name
       value: Trash_Can_No_Bag (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6390278615144252921, guid: 8c671eef465dd8944bc37627987c7a99, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4976059204709205686, guid: 8c671eef465dd8944bc37627987c7a99, type: 3}
@@ -50305,6 +51031,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.4101
@@ -50624,6 +51354,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Palette_bois_01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -50640,6 +51374,10 @@ PrefabInstance:
     - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_Name
       value: Crate (50)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -50691,6 +51429,133 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
   m_PrefabInstance: {fileID: 1249203394}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1249866949
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1249866950}
+  - component: {fileID: 1249866952}
+  - component: {fileID: 1249866951}
+  m_Layer: 0
+  m_Name: Directional Light (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &1249866950
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249866949}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.29040283, y: 0.65936416, z: -0.13308042, w: 0.68058413}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 469095122}
+  m_LocalEulerAnglesHint: {x: 34.805, y: 92.666, z: 14.228}
+--- !u!114 &1249866951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249866949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
+--- !u!108 &1249866952
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249866949}
+  m_Enabled: 1
+  serializedVersion: 11
+  m_Type: 1
+  m_Color: {r: 0.629984, g: 0.72826374, b: 0.9339623, a: 1}
+  m_Intensity: 5
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 1
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 2
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 16
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: -8.846962e+13, y: -0.00000034929758, z: 9.0947e+20, w: -2.1945413e+30}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ForceVisible: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_LightUnit: 1
+  m_LuxAtDistance: 1
+  m_EnableSpotReflector: 1
 --- !u!1 &1250477857
 GameObject:
   m_ObjectHideFlags: 0
@@ -51258,6 +52123,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 18.053349
@@ -51477,7 +52346,7 @@ Light:
   serializedVersion: 11
   m_Type: 1
   m_Color: {r: 0.629984, g: 0.72826374, b: 0.9339623, a: 1}
-  m_Intensity: 3
+  m_Intensity: 5
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -51519,10 +52388,10 @@ Light:
   m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 12
+  m_BounceIntensity: 16
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 4.4037e-41, y: 2.524355e-29, z: 0, w: -3.968657e-39}
+  m_BoundingSphereOverride: {x: 5.856e-42, y: 2.524355e-29, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
@@ -51931,6 +52800,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trash_Can_No_Bag
       objectReference: {fileID: 0}
+    - target: {fileID: 6390278615144252921, guid: 8c671eef465dd8944bc37627987c7a99, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4976059204709205686, guid: 8c671eef465dd8944bc37627987c7a99, type: 3}
     m_RemovedGameObjects: []
@@ -52198,6 +53071,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5980629887379108047, guid: aeff251a8b88fd14ca296070955abbfc, type: 3}
   m_PrefabInstance: {fileID: 1402860007}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1292015591
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2011499817594735063, guid: 6f2a44d4e73d721479b9fc2483d370e5, type: 3}
+      propertyPath: m_Name
+      value: Debris_Rock_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 3374883030840321042, guid: 6f2a44d4e73d721479b9fc2483d370e5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 3374883030840321042, guid: 6f2a44d4e73d721479b9fc2483d370e5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.00000023841858
+      objectReference: {fileID: 0}
+    - target: {fileID: 3374883030840321042, guid: 6f2a44d4e73d721479b9fc2483d370e5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 49.435455
+      objectReference: {fileID: 0}
+    - target: {fileID: 3374883030840321042, guid: 6f2a44d4e73d721479b9fc2483d370e5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.29029188
+      objectReference: {fileID: 0}
+    - target: {fileID: 3374883030840321042, guid: 6f2a44d4e73d721479b9fc2483d370e5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7688512
+      objectReference: {fileID: 0}
+    - target: {fileID: 3374883030840321042, guid: 6f2a44d4e73d721479b9fc2483d370e5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.062735595
+      objectReference: {fileID: 0}
+    - target: {fileID: 3374883030840321042, guid: 6f2a44d4e73d721479b9fc2483d370e5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5662709
+      objectReference: {fileID: 0}
+    - target: {fileID: 3374883030840321042, guid: 6f2a44d4e73d721479b9fc2483d370e5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 22.045
+      objectReference: {fileID: 0}
+    - target: {fileID: 3374883030840321042, guid: 6f2a44d4e73d721479b9fc2483d370e5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -101.837
+      objectReference: {fileID: 0}
+    - target: {fileID: 3374883030840321042, guid: 6f2a44d4e73d721479b9fc2483d370e5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -152.692
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6f2a44d4e73d721479b9fc2483d370e5, type: 3}
 --- !u!1 &1293351389
 GameObject:
   m_ObjectHideFlags: 0
@@ -52365,6 +53295,10 @@ PrefabInstance:
     - target: {fileID: 9069417578007120335, guid: 756f239431c8976429d49ad137246d09, type: 3}
       propertyPath: m_Name
       value: Trash_Can (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9069417578007120335, guid: 756f239431c8976429d49ad137246d09, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2266349249599545237, guid: 756f239431c8976429d49ad137246d09, type: 3}
@@ -52537,6 +53471,10 @@ PrefabInstance:
     - target: {fileID: 5895329379036034136, guid: 5022477a974fa0f4ea539d6958d69537, type: 3}
       propertyPath: m_Name
       value: ConveyerBelt_4x4 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5895329379036034136, guid: 5022477a974fa0f4ea539d6958d69537, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -52786,6 +53724,10 @@ PrefabInstance:
     - target: {fileID: 6547754752973701076, guid: b3a8b40965a1736408e7082f0ad57b4c, type: 3}
       propertyPath: m_Name
       value: Trash_Can_Rust (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6547754752973701076, guid: b3a8b40965a1736408e7082f0ad57b4c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7586591940400826446, guid: b3a8b40965a1736408e7082f0ad57b4c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -53462,7 +54404,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cad6810e1c72e1b46b27173ef1044506, type: 2}
+  - {fileID: 2100000, guid: a8fde908502fe744db7715fadd347440, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -53631,6 +54573,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.15854
@@ -53704,6 +54650,10 @@ PrefabInstance:
     - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_Name
       value: Crate (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -53989,6 +54939,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.878767
@@ -54045,6 +54999,10 @@ PrefabInstance:
     - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_Name
       value: Crate (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -55313,6 +56271,63 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4, y: 3.9999995, z: 1.4999998}
   m_Center: {x: -2, y: -1.9999998, z: -0.7499999}
+--- !u!1001 &1371340639
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -18.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.00000047683716
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 36.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.08538039
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7844072
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.29177156
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5406338
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7576936788384639896, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_Name
+      value: Debris_Rock_01 (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
 --- !u!1 &1375656399
 GameObject:
   m_ObjectHideFlags: 0
@@ -55587,6 +56602,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Palette_bois_01 (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -55648,6 +56667,10 @@ PrefabInstance:
     - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
       propertyPath: m_Name
       value: Palette_bois_01 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -55713,7 +56736,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ac46ccc1de27d2441866a492f54ffa75, type: 2}
+  - {fileID: 2100000, guid: 5d04e31a9d730274899b2bacaa13a43a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -56443,6 +57466,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Belt_Cover_Var_1
       objectReference: {fileID: 0}
+    - target: {fileID: 1897616004512241861, guid: aeff251a8b88fd14ca296070955abbfc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5980629887379108047, guid: aeff251a8b88fd14ca296070955abbfc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.5359993
@@ -56833,6 +57860,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cylindrical_Wheel_Machine1_1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3700080706252993213, guid: 9ff6a3bc725be9c4dbd567d3725040d0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7186084171313823621, guid: 9ff6a3bc725be9c4dbd567d3725040d0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.08
@@ -57216,6 +58247,63 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4, y: 3.9999995, z: 1.4999998}
   m_Center: {x: -2, y: -1.9999998, z: -0.7499999}
+--- !u!1001 &1419232234
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -18.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.00000047683716
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 47.4426
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.08538039
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7844072
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.29177156
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5406338
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259726672477205122, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7576936788384639896, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
+      propertyPath: m_Name
+      value: Debris_Rock_01
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 578de8b27d9113b48bedf8cb52908890, type: 3}
 --- !u!1 &1421124062
 GameObject:
   m_ObjectHideFlags: 0
@@ -57673,6 +58761,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trash_Can_No_Bag_Rust (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2524294674658235147, guid: 83eac96a424da8f4da053f2f2001b5ed, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7893797691544392225, guid: 83eac96a424da8f4da053f2f2001b5ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: 11.454241
@@ -58102,6 +59194,10 @@ PrefabInstance:
     - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_Name
       value: Crate (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -59492,6 +60588,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 20.182787
@@ -59553,6 +60653,10 @@ PrefabInstance:
     - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_Name
       value: Crate (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -59880,7 +60984,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ac46ccc1de27d2441866a492f54ffa75, type: 2}
+  - {fileID: 2100000, guid: 5d04e31a9d730274899b2bacaa13a43a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -60656,6 +61760,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.81615
@@ -60730,6 +61838,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 18.592943
@@ -60791,6 +61903,10 @@ PrefabInstance:
     - target: {fileID: 7356487241517310155, guid: 3316171f29f2de642ac0ba090f253406, type: 3}
       propertyPath: m_Name
       value: Centrifuge (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356487241517310155, guid: 3316171f29f2de642ac0ba090f253406, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7880365346658810481, guid: 3316171f29f2de642ac0ba090f253406, type: 3}
       propertyPath: m_LocalPosition.x
@@ -61351,7 +62467,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cad6810e1c72e1b46b27173ef1044506, type: 2}
+  - {fileID: 2100000, guid: 9b44f6e6d2b16ee4d816f96f2a94473f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -62453,6 +63569,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Palette_bois_01 (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -62803,6 +63923,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 25.63393
@@ -62904,6 +64028,10 @@ PrefabInstance:
     - target: {fileID: 5895329379036034136, guid: 5022477a974fa0f4ea539d6958d69537, type: 3}
       propertyPath: m_Name
       value: ConveyerBelt_4x4 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5895329379036034136, guid: 5022477a974fa0f4ea539d6958d69537, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -63259,6 +64387,10 @@ PrefabInstance:
     - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_Name
       value: Crate (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -64247,7 +65379,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ac46ccc1de27d2441866a492f54ffa75, type: 2}
+  - {fileID: 2100000, guid: 5d04e31a9d730274899b2bacaa13a43a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -64588,6 +65720,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Palette_bois_02
       objectReference: {fileID: 0}
+    - target: {fileID: 8414285706495803942, guid: 7c1440051de66974aba648a3c9ae36f2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -64715,6 +65851,10 @@ PrefabInstance:
     - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_Name
       value: Crate (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -65110,6 +66250,10 @@ PrefabInstance:
     - target: {fileID: 6547754752973701076, guid: b3a8b40965a1736408e7082f0ad57b4c, type: 3}
       propertyPath: m_Name
       value: Trash_Can_Rust (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6547754752973701076, guid: b3a8b40965a1736408e7082f0ad57b4c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7586591940400826446, guid: b3a8b40965a1736408e7082f0ad57b4c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -65657,6 +66801,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Vate_01
       objectReference: {fileID: 0}
+    - target: {fileID: 2199533990038437057, guid: c970c2346beb8794694e74276834e6d8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -65837,7 +66985,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ac46ccc1de27d2441866a492f54ffa75, type: 2}
+  - {fileID: 2100000, guid: 5d04e31a9d730274899b2bacaa13a43a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -65940,6 +67088,10 @@ PrefabInstance:
     - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
       propertyPath: m_Name
       value: Palette_bois_01 (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -66906,6 +68058,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Palette_bois_01 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -66922,6 +68078,10 @@ PrefabInstance:
     - target: {fileID: 6547754752973701076, guid: b3a8b40965a1736408e7082f0ad57b4c, type: 3}
       propertyPath: m_Name
       value: Trash_Can_Rust (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6547754752973701076, guid: b3a8b40965a1736408e7082f0ad57b4c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7586591940400826446, guid: b3a8b40965a1736408e7082f0ad57b4c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -67550,6 +68710,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.690029
@@ -67639,7 +68803,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ac46ccc1de27d2441866a492f54ffa75, type: 2}
+  - {fileID: 2100000, guid: 5d04e31a9d730274899b2bacaa13a43a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -67757,6 +68921,10 @@ PrefabInstance:
     - target: {fileID: 5895329379036034136, guid: 5022477a974fa0f4ea539d6958d69537, type: 3}
       propertyPath: m_Name
       value: ConveyerBelt_4x4 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5895329379036034136, guid: 5022477a974fa0f4ea539d6958d69537, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -68404,7 +69572,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ac46ccc1de27d2441866a492f54ffa75, type: 2}
+  - {fileID: 2100000, guid: 5d04e31a9d730274899b2bacaa13a43a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -68967,6 +70135,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Palette_bois_01 (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -69357,6 +70529,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Vate_01
       objectReference: {fileID: 0}
+    - target: {fileID: 2199533990038437057, guid: c970c2346beb8794694e74276834e6d8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -69419,6 +70595,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trash_Can_No_Bag (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6390278615144252921, guid: 8c671eef465dd8944bc37627987c7a99, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4976059204709205686, guid: 8c671eef465dd8944bc37627987c7a99, type: 3}
     m_RemovedGameObjects: []
@@ -69470,6 +70650,10 @@ PrefabInstance:
     - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_Name
       value: Crate (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -70687,6 +71871,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConveyerBelt_4x4 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 5895329379036034136, guid: 5022477a974fa0f4ea539d6958d69537, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -71521,6 +72709,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConveyerBelt_4x4 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5895329379036034136, guid: 5022477a974fa0f4ea539d6958d69537, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -71537,6 +72729,10 @@ PrefabInstance:
     - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_Name
       value: Crate (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -72316,6 +73512,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Palette_bois_01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -72443,6 +73643,10 @@ PrefabInstance:
     - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_Name
       value: Crate (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -72656,6 +73860,10 @@ PrefabInstance:
     - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
       propertyPath: m_Name
       value: Palette_bois_01 (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -73883,6 +75091,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.050987
@@ -74541,6 +75753,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConveyerBelt_4x4 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 5895329379036034136, guid: 5022477a974fa0f4ea539d6958d69537, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -74819,6 +76035,10 @@ PrefabInstance:
     - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
       propertyPath: m_Name
       value: Palette_bois_01 (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -75214,6 +76434,10 @@ PrefabInstance:
     - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
       propertyPath: m_Name
       value: Palette_bois_01 (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -75716,6 +76940,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coveyer_belt_90 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7687812257003929401, guid: 52f5c953e613db444a7a18fc0ad2ea64, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -75883,6 +77111,10 @@ PrefabInstance:
     - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
       propertyPath: m_Name
       value: Palette_bois_01 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -76274,6 +77506,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Palette_bois_01 (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -76336,6 +77572,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConveyerBelt_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2122245789441844081, guid: bc8186f24523db3439dd82be9921f754, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -76397,6 +77637,10 @@ PrefabInstance:
     - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
       propertyPath: m_Name
       value: Palette_bois_01 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -76858,6 +78102,10 @@ PrefabInstance:
     - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_Name
       value: Crate (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -78076,6 +79324,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trash_Can_No_Bag (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6390278615144252921, guid: 8c671eef465dd8944bc37627987c7a99, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4976059204709205686, guid: 8c671eef465dd8944bc37627987c7a99, type: 3}
     m_RemovedGameObjects: []
@@ -78692,6 +79944,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trash_Can (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 9069417578007120335, guid: 756f239431c8976429d49ad137246d09, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2266349249599545237, guid: 756f239431c8976429d49ad137246d09, type: 3}
     m_RemovedGameObjects: []
@@ -78990,6 +80246,63 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1943762849}
   m_Mesh: {fileID: -1954584402951376801, guid: 66a2e99317d928149a0c21e63ad4c16a, type: 3}
+--- !u!1001 &1945826684
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2011499817594735063, guid: 6f2a44d4e73d721479b9fc2483d370e5, type: 3}
+      propertyPath: m_Name
+      value: Debris_Rock_02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3374883030840321042, guid: 6f2a44d4e73d721479b9fc2483d370e5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.964
+      objectReference: {fileID: 0}
+    - target: {fileID: 3374883030840321042, guid: 6f2a44d4e73d721479b9fc2483d370e5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0000014305115
+      objectReference: {fileID: 0}
+    - target: {fileID: 3374883030840321042, guid: 6f2a44d4e73d721479b9fc2483d370e5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 41.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 3374883030840321042, guid: 6f2a44d4e73d721479b9fc2483d370e5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.29034936
+      objectReference: {fileID: 0}
+    - target: {fileID: 3374883030840321042, guid: 6f2a44d4e73d721479b9fc2483d370e5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.76832986
+      objectReference: {fileID: 0}
+    - target: {fileID: 3374883030840321042, guid: 6f2a44d4e73d721479b9fc2483d370e5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.06246842
+      objectReference: {fileID: 0}
+    - target: {fileID: 3374883030840321042, guid: 6f2a44d4e73d721479b9fc2483d370e5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5669782
+      objectReference: {fileID: 0}
+    - target: {fileID: 3374883030840321042, guid: 6f2a44d4e73d721479b9fc2483d370e5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 22.045
+      objectReference: {fileID: 0}
+    - target: {fileID: 3374883030840321042, guid: 6f2a44d4e73d721479b9fc2483d370e5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -101.732
+      objectReference: {fileID: 0}
+    - target: {fileID: 3374883030840321042, guid: 6f2a44d4e73d721479b9fc2483d370e5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -152.692
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6f2a44d4e73d721479b9fc2483d370e5, type: 3}
 --- !u!1 &1951174027
 GameObject:
   m_ObjectHideFlags: 0
@@ -79152,6 +80465,10 @@ PrefabInstance:
     - target: {fileID: 5895329379036034136, guid: 5022477a974fa0f4ea539d6958d69537, type: 3}
       propertyPath: m_Name
       value: ConveyerBelt_4x4 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5895329379036034136, guid: 5022477a974fa0f4ea539d6958d69537, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -79424,7 +80741,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ac46ccc1de27d2441866a492f54ffa75, type: 2}
+  - {fileID: 2100000, guid: 5d04e31a9d730274899b2bacaa13a43a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -81027,6 +82344,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Palette_bois_01 (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -81187,7 +82508,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ac46ccc1de27d2441866a492f54ffa75, type: 2}
+  - {fileID: 2100000, guid: 5d04e31a9d730274899b2bacaa13a43a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -81592,6 +82913,63 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4, y: 3.9999995, z: 1.4999998}
   m_Center: {x: -2, y: -2.0000074, z: -0.7499999}
+--- !u!1001 &2012104730
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2011499817594735063, guid: 6f2a44d4e73d721479b9fc2483d370e5, type: 3}
+      propertyPath: m_Name
+      value: Debris_Rock_02 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3374883030840321042, guid: 6f2a44d4e73d721479b9fc2483d370e5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -32.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3374883030840321042, guid: 6f2a44d4e73d721479b9fc2483d370e5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3374883030840321042, guid: 6f2a44d4e73d721479b9fc2483d370e5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 61.393936
+      objectReference: {fileID: 0}
+    - target: {fileID: 3374883030840321042, guid: 6f2a44d4e73d721479b9fc2483d370e5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.0626946
+      objectReference: {fileID: 0}
+    - target: {fileID: 3374883030840321042, guid: 6f2a44d4e73d721479b9fc2483d370e5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.5663794
+      objectReference: {fileID: 0}
+    - target: {fileID: 3374883030840321042, guid: 6f2a44d4e73d721479b9fc2483d370e5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.29030088
+      objectReference: {fileID: 0}
+    - target: {fileID: 3374883030840321042, guid: 6f2a44d4e73d721479b9fc2483d370e5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.76877123
+      objectReference: {fileID: 0}
+    - target: {fileID: 3374883030840321042, guid: 6f2a44d4e73d721479b9fc2483d370e5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 22.045
+      objectReference: {fileID: 0}
+    - target: {fileID: 3374883030840321042, guid: 6f2a44d4e73d721479b9fc2483d370e5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 78.179
+      objectReference: {fileID: 0}
+    - target: {fileID: 3374883030840321042, guid: 6f2a44d4e73d721479b9fc2483d370e5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -152.692
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6f2a44d4e73d721479b9fc2483d370e5, type: 3}
 --- !u!4 &2012437444 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5452861030250788773, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
@@ -82867,6 +84245,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cylindrical_Wheel_Machine1_
       objectReference: {fileID: 0}
+    - target: {fileID: 2537913472507231484, guid: d3ee01caf56a2a2468a0b67ab7333a18, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 6482287189440848298, guid: d3ee01caf56a2a2468a0b67ab7333a18, type: 3}
       propertyPath: m_LocalPosition.x
       value: 18.956226
@@ -82963,6 +84345,10 @@ PrefabInstance:
     - target: {fileID: 9069417578007120335, guid: 756f239431c8976429d49ad137246d09, type: 3}
       propertyPath: m_Name
       value: Trash_Can
+      objectReference: {fileID: 0}
+    - target: {fileID: 9069417578007120335, guid: 756f239431c8976429d49ad137246d09, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2266349249599545237, guid: 756f239431c8976429d49ad137246d09, type: 3}
@@ -83238,6 +84624,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1458213089811010355, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2267366393625364873, guid: 19359b5182327094ebed85f7665e96e2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.020023
@@ -83345,6 +84735,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Palette_bois_01 (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 6404830332697826384, guid: 63e68ec1bf53c0346b5ad675b6a6d056, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -83361,6 +84755,10 @@ PrefabInstance:
     - target: {fileID: 6547754752973701076, guid: b3a8b40965a1736408e7082f0ad57b4c, type: 3}
       propertyPath: m_Name
       value: Trash_Can_Rust (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6547754752973701076, guid: b3a8b40965a1736408e7082f0ad57b4c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 7586591940400826446, guid: b3a8b40965a1736408e7082f0ad57b4c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -85603,6 +87001,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConveyerBelt_4x4 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 5895329379036034136, guid: 5022477a974fa0f4ea539d6958d69537, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -86225,6 +87627,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Vate_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2199533990038437057, guid: c970c2346beb8794694e74276834e6d8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -86668,6 +88074,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stairs
       objectReference: {fileID: 0}
+    - target: {fileID: 1548234433838644256, guid: 1e3c75cd8f2fac74a97479e0479214af, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2177419704728725146, guid: 1e3c75cd8f2fac74a97479e0479214af, type: 3}
       propertyPath: m_LocalPosition.x
       value: 23.977404
@@ -86722,3 +88132,13 @@ SceneRoots:
   m_Roots:
   - {fileID: 469095122}
   - {fileID: 1714432754}
+  - {fileID: 1292015591}
+  - {fileID: 1945826684}
+  - {fileID: 1419232234}
+  - {fileID: 1371340639}
+  - {fileID: 404019790}
+  - {fileID: 1216214754}
+  - {fileID: 2012104730}
+  - {fileID: 316372804}
+  - {fileID: 328754239}
+  - {fileID: 275502945}
