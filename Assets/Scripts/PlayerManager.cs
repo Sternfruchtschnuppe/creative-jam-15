@@ -106,6 +106,7 @@ public class PlayerManager : MonoBehaviour
     {
         if (ctx.performed)
         {
+            playerAnimator.SetFloat("isCranking", 1f);
             Lamp.SetActive(false);
             Gun.SetActive(true);
             isUsingFlashLight = false;
@@ -128,6 +129,7 @@ public class PlayerManager : MonoBehaviour
     {
         if (ctx.performed)
         {
+            playerAnimator.SetFloat("isCranking", 0f);
             Lamp.SetActive(true);
             Gun.SetActive(false);
             isUsingFlashLight = false;
