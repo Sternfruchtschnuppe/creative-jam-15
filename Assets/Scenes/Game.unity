@@ -242,7 +242,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 11
   m_Type: 1
-  m_Color: {r: 0.13082945, g: 0.18867922, b: 0.14206973, a: 1}
+  m_Color: {r: 0.4009434, g: 0.4009434, b: 0.4009434, a: 1}
   m_Intensity: 10
   m_Range: 10
   m_SpotAngle: 30
@@ -408,6 +408,22 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3403602309615832591, guid: fbd86bb915dc57c408e8224ee22edce0, type: 3}
+      propertyPath: enemies.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3403602309615832591, guid: fbd86bb915dc57c408e8224ee22edce0, type: 3}
+      propertyPath: 'enemies.Array.data[0]'
+      value: 
+      objectReference: {fileID: 5751097738162245190, guid: ecab16579acb977408704388edcad145, type: 3}
+    - target: {fileID: 3403602309615832591, guid: fbd86bb915dc57c408e8224ee22edce0, type: 3}
+      propertyPath: 'enemies.Array.data[1]'
+      value: 
+      objectReference: {fileID: 9049360351235630702, guid: 48236fd9ebbf603438cf0eee0ad08f88, type: 3}
+    - target: {fileID: 3403602309615832591, guid: fbd86bb915dc57c408e8224ee22edce0, type: 3}
+      propertyPath: 'enemies.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1444871090821432962, guid: 0f6174e3b19fa154b977d873e65bc052, type: 3}
     - target: {fileID: 4288938354225191609, guid: fbd86bb915dc57c408e8224ee22edce0, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -451,6 +467,10 @@ PrefabInstance:
     - target: {fileID: 7027857168417101575, guid: fbd86bb915dc57c408e8224ee22edce0, type: 3}
       propertyPath: m_Volume
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7853389762134981027, guid: fbd86bb915dc57c408e8224ee22edce0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8278575148398402391, guid: fbd86bb915dc57c408e8224ee22edce0, type: 3}
       propertyPath: m_Name
