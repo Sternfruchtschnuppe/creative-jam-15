@@ -11600,7 +11600,7 @@ MonoBehaviour:
   speed: 3.5
   scaredTime: 0.5
   attackCooldown: 2
-  life: 3
+  life: 1.5
   monsterAnimator: {fileID: 1670105453482872850}
   isOperational: 1
   isPlayerInTrigger: 0
