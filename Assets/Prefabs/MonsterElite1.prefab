@@ -18461,11 +18461,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   state: 0
-  damage: 1
+  damage: 1.5
   speed: 3.5
   scaredTime: 0.5
   attackCooldown: 2
-  life: 6
+  life: 3.5
   monsterAnimator: {fileID: 4956351349716975871}
   isOperational: 0
   isPlayerInTrigger: 0

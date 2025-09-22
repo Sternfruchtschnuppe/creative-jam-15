@@ -150,7 +150,7 @@ public class PlayerManager : MonoBehaviour
         if (ctx.canceled)
         {
             float delay = Time.time - lampPressedTime;
-            if(delay > 3f)
+            if(delay > 1f)
             {
                 StartCoroutine(nameof(StartBigFlash));
             }

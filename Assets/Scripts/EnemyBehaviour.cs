@@ -162,7 +162,7 @@ public class EnemyBehaviour : MonoBehaviour
         if (life <= 0f && playerTransform != null)
         {
             var pm = playerTransform.GetComponent<PlayerManager>();
-            if (pm != null) pm.UpdateLife(pm.life + 2f);
+            if (pm != null) pm.UpdateLife(pm.life + 5f);
             state = EnemyState.Freeze;
             agent.isStopped = true;
             isOperational = false;
