@@ -2074,8 +2074,8 @@ Transform:
   m_GameObject: {fileID: 1444871090821432962}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 125.20177, y: 0, z: 1106.1284}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 125.20177, y: -0.78117, z: 1106.1284}
+  m_LocalScale: {x: 1.7954, y: 1.7954, z: 1.7954}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1722984772774616393}
@@ -2146,10 +2146,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   state: 0
   damage: 1
-  speed: 2
+  speed: 1
   scaredTime: 0.5
   attackCooldown: 2
-  life: 10
+  life: 100
   monsterAnimator: {fileID: 7133327723292715050}
   isOperational: 0
   isPlayerInTrigger: 0
@@ -2178,10 +2178,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.42248386
-  m_Height: 1.0560387
+  m_Radius: 0.54869896
+  m_Height: 1.0973979
   m_Direction: 1
-  m_Center: {x: 0.03000001, y: 0.5284634, z: 0}
+  m_Center: {x: 0.034180146, y: 0.5284634, z: 0}
 --- !u!65 &5209707326989977690
 BoxCollider:
   m_ObjectHideFlags: 0

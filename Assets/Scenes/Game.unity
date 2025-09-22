@@ -342,7 +342,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2286696415402088155, guid: fbd86bb915dc57c408e8224ee22edce0, type: 3}
       propertyPath: lifeReductionPerSecond
-      value: 0.25
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2354527366149143919, guid: fbd86bb915dc57c408e8224ee22edce0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -413,12 +413,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3403602309615832591, guid: fbd86bb915dc57c408e8224ee22edce0, type: 3}
+      propertyPath: intermission
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3403602309615832591, guid: fbd86bb915dc57c408e8224ee22edce0, type: 3}
       propertyPath: baseMaxInterval
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3403602309615832591, guid: fbd86bb915dc57c408e8224ee22edce0, type: 3}
       propertyPath: baseMinInterval
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3403602309615832591, guid: fbd86bb915dc57c408e8224ee22edce0, type: 3}
+      propertyPath: enemiesPowerExp
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 3403602309615832591, guid: fbd86bb915dc57c408e8224ee22edce0, type: 3}
       propertyPath: baseEnemiesPerWave
@@ -456,6 +464,10 @@ PrefabInstance:
       propertyPath: door
       value: 
       objectReference: {fileID: 1750855987}
+    - target: {fileID: 4614591975455283910, guid: fbd86bb915dc57c408e8224ee22edce0, type: 3}
+      propertyPath: maxLife
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 4614591975455283910, guid: fbd86bb915dc57c408e8224ee22edce0, type: 3}
       propertyPath: PanelFadeIn
       value: 
@@ -906,9 +918,17 @@ PrefabInstance:
       value: 17.029486
       objectReference: {fileID: 0}
     - target: {fileID: 2942428145041096241, guid: aad78686c3d0c294b825008c9c2ff07a, type: 3}
+      propertyPath: Dammage
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2942428145041096241, guid: aad78686c3d0c294b825008c9c2ff07a, type: 3}
       propertyPath: weaponSlot
       value: 
       objectReference: {fileID: 33260452}
+    - target: {fileID: 2942428145041096241, guid: aad78686c3d0c294b825008c9c2ff07a, type: 3}
+      propertyPath: bulletSpeed
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 3053423625434500456, guid: aad78686c3d0c294b825008c9c2ff07a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 69.59297

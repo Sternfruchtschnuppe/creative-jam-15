@@ -18409,7 +18409,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 1.5
   m_Acceleration: 12
   avoidancePriority: 50
   m_AngularSpeed: 360
@@ -18461,11 +18461,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   state: 0
-  damage: 1
-  speed: 3.5
+  damage: 10
+  speed: 2.5
   scaredTime: 0.5
-  attackCooldown: 2
-  life: 6
+  attackCooldown: 5
+  life: 20
   monsterAnimator: {fileID: 4956351349716975871}
   isOperational: 0
   isPlayerInTrigger: 0
