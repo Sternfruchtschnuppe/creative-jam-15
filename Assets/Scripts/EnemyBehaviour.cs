@@ -16,6 +16,8 @@ public class EnemyBehaviour : MonoBehaviour
 
     public float life = 2f;
 
+    public float playerLifeOnDeath;
+
     private Transform playerTransform;
     private NavMeshAgent agent;
 
@@ -162,7 +164,7 @@ public class EnemyBehaviour : MonoBehaviour
         if (life <= 0f && playerTransform != null)
         {
             var pm = playerTransform.GetComponent<PlayerManager>();
-            if (pm != null) pm.UpdateLife(pm.life + 5f);
+            if (pm != null) pm.UpdateLife(pm.life + playerLifeOnDeath);
             state = EnemyState.Freeze;
             agent.isStopped = true;
             isOperational = false;

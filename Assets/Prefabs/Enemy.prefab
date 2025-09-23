@@ -11598,9 +11598,10 @@ MonoBehaviour:
   state: 0
   damage: 1
   speed: 3.5
-  scaredTime: 0.5
+  scaredTime: 0.8
   attackCooldown: 2
-  life: 1.5
+  life: 2
+  playerLifeOnDeath: 2.8
   monsterAnimator: {fileID: 1670105453482872850}
   isOperational: 1
   isPlayerInTrigger: 0
@@ -11629,7 +11630,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.65
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}

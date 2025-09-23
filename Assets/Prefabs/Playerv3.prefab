@@ -1638,17 +1638,19 @@ MonoBehaviour:
   bulletSpeed: 20
   currentMoveSpeed: 0
   life: 0
+  shootDelay: 0.1
   bigFlashLight: {fileID: 36701708152980442}
   playerAnimator: {fileID: 7686095502918983150}
   isFiring: 0
   isUsingFlashLight: 0
   Bullet: {fileID: 2436786927938855150, guid: f27d5655f3a4d354abfd6439e5cac932, type: 3}
-  Dammage: 0.5
+  Dammage: 1
   weaponSlot: {fileID: 1995797997220177075}
   isOperational: 1
   isMoving: 0
   isCranking: 0
   isFlashing: 0
+  ennemiesNearby: 0
   crankingSource: {fileID: 1585555637694032361}
   flashSound: {fileID: 8300000, guid: 01afe1f21e060d640a29f8f8e5ad0a3b, type: 3}
   source: {fileID: 3400407058540377345}

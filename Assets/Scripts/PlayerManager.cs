@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.InputSystem;
@@ -19,6 +19,8 @@ public class PlayerManager : MonoBehaviour
     
     public float life = 0.1f;
 
+    public float shootDelay = 0.1f;
+
     public Light bigFlashLight;
 
     public Animator playerAnimator;
@@ -30,7 +32,7 @@ public class PlayerManager : MonoBehaviour
 
     public GameObject Bullet;
 
-    public float Dammage = 0.5f;
+    public float Dammage;
     
     private Camera playerCam;
     private Transform playerCamTransform;
@@ -45,7 +47,8 @@ public class PlayerManager : MonoBehaviour
 
     public bool isCranking = false;
     public bool isFlashing = false;
-    public AudioSource crankingSource;
+    public bool ennemiesNearby = false;
+	public AudioSource crankingSource;
     public AudioClip flashSound;
     public AudioSource source;
 
@@ -57,7 +60,11 @@ public class PlayerManager : MonoBehaviour
     public GameObject muzzleFlash;
 
     public float lampPressedTime;
-    
+
+    private float ratio;
+
+    private float shootTimer;
+
     private void Start()
     {
         // lifeLightColor = lifeLight.color;
@@ -69,10 +76,13 @@ public class PlayerManager : MonoBehaviour
         flashLightController = GetComponentInChildren<FlashLightController>();
 
         currentMoveSpeed = moveSpeed;
-        InvokeRepeating("Fire", 0.1f, 0.2f);
+
         
         enemyLayer = LayerMask.GetMask("Enemy");
         crankingSource = Lamp.GetComponent<AudioSource>();
+
+        ratio = Screen.width / 480;
+        Debug.Log(ratio);
     }
 
     public void OnMoveCtx(UnityEngine.InputSystem.InputAction.CallbackContext ctx)
@@ -106,7 +116,7 @@ public class PlayerManager : MonoBehaviour
 
     public void OnAttackCtx(InputAction.CallbackContext ctx)
     {
-        if (ctx.performed)
+        if (ctx.performed && !isCranking)
         {
             playerAnimator.SetFloat("isCranking", 1f);
             Lamp.SetActive(false);
@@ -129,7 +139,7 @@ public class PlayerManager : MonoBehaviour
     
     public void OnFlashLightCtx(InputAction.CallbackContext ctx)
     {
-        if (ctx.performed)
+        if (ctx.performed && !isFiring)
         {
             lampPressedTime = Time.time;
             playerAnimator.SetFloat("isCranking", 0f);
@@ -142,18 +152,23 @@ public class PlayerManager : MonoBehaviour
             if (!isCranking)
             {
                 isCranking = true;
-                
-                
-                // Invoke("OnCrankingFinished", crankingSound.length);
             }
         }
         if (ctx.canceled)
         {
             float delay = Time.time - lampPressedTime;
-            if(delay > 1f)
+            if(delay > 1f && !isFiring)
             {
                 StartCoroutine(nameof(StartBigFlash));
             }
+            else
+            {
+				playerAnimator.SetFloat("isCranking", 1f);
+				Lamp.SetActive(false);
+				Gun.SetActive(true);
+				isUsingFlashLight = false;
+                isCranking = false;
+			}
         }
         //todo insert secondary weapon / flash light flashing
         // if (ctx.performed)
@@ -190,7 +205,10 @@ public class PlayerManager : MonoBehaviour
         bigFlashLight.gameObject.SetActive(false);
         isUsingFlashLight = false;
         isFlashing = false;
-    }
+		playerAnimator.SetFloat("isCranking", 1f);
+		Lamp.SetActive(false);
+		Gun.SetActive(true);
+	}
     
     // void OnCrankingFinished()
     // {
@@ -232,6 +250,7 @@ public class PlayerManager : MonoBehaviour
 
     private void Update()
     {
+        Fire();
         if (isOperational)
         {
             lerpedInput = Vector2.Lerp(lerpedInput, rawInput, Time.deltaTime * smoothingSpeed);
@@ -257,7 +276,7 @@ public class PlayerManager : MonoBehaviour
             float depth = playerCam.WorldToScreenPoint(transform.position).z;
             if (depth > 0f)
             {
-                Vector3 lookAt = playerCam.ScreenToWorldPoint(new Vector3(m.x, m.y, depth));
+                Vector3 lookAt = playerCam.ScreenToWorldPoint(new Vector3(m.x/ratio, m.y/ratio, depth));
                 lookAt.y = transform.position.y; // yaw uniquement
                 transform.rotation = Quaternion.LookRotation(lookAt - transform.position, Vector3.up);
             }
@@ -270,10 +289,15 @@ public class PlayerManager : MonoBehaviour
 
     void Fire()
     {
-        if (isOperational)
+        if (shootTimer >= 0)
         {
-            if (isFiring)
+			shootTimer -= Time.deltaTime;
+		}
+		if (isOperational)
+        {
+            if (isFiring && shootTimer <= 0)
             {
+                shootTimer = shootDelay;
                 Quaternion fireRotation = transform.rotation;
                 Vector3 fireDirection = transform.forward;
                 if (Physics.Raycast(playerCam.ScreenPointToRay(Input.mousePosition), out RaycastHit hit, Mathf.Infinity, enemyLayer))
