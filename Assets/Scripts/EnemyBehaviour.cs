@@ -16,6 +16,8 @@ public class EnemyBehaviour : MonoBehaviour
 
     public float life = 2f;
 
+    public float playerLifeOnDeath;
+
     private Transform playerTransform;
     private NavMeshAgent agent;
 
@@ -36,6 +38,8 @@ public class EnemyBehaviour : MonoBehaviour
     public Material dissolveMat;
 
     public int monsterID;
+
+    public bool slowFlag = false;
     void Start()
     {
         
@@ -60,7 +64,8 @@ public class EnemyBehaviour : MonoBehaviour
             {
                 if (state == EnemyState.Slow) state = EnemyState.Chase;
             }
-
+            if (slowFlag)
+                state = EnemyState.Slow;
             switch (state)
             {
                 case EnemyState.Chase:
@@ -140,7 +145,16 @@ public class EnemyBehaviour : MonoBehaviour
         {
             lastEnteredVisionCone = Time.time;
             state = EnemyState.Slow;
+            slowFlag = true;
+            if (!IsInvoking("OnEndSlowFlag"))
+            {
+                Invoke("OnEndSlowFlag", 4f);
+            }
         }
+    }
+    void OnEndSlowFlag()
+    {
+        slowFlag = false;
     }
 
     public void UpdateLife(float life)
@@ -150,7 +164,7 @@ public class EnemyBehaviour : MonoBehaviour
         if (life <= 0f && playerTransform != null)
         {
             var pm = playerTransform.GetComponent<PlayerManager>();
-            if (pm != null) pm.UpdateLife(pm.life + 2f);
+            if (pm != null) pm.UpdateLife(pm.life + playerLifeOnDeath);
             state = EnemyState.Freeze;
             agent.isStopped = true;
             isOperational = false;
@@ -171,7 +185,7 @@ public class EnemyBehaviour : MonoBehaviour
         {
             if (isPlayerInTrigger)
             {
-                player.life -= damage;
+                player.UpdateLife(player.life - damage);
                 player.OnHit();
             }
         }

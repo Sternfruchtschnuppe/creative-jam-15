@@ -13,7 +13,8 @@ public class FXManager : MonoBehaviour
 
     public Transform playerTransform;
     public Color toonColor = Color.white;
-    public float coneCutoutRadius = 0.1f;
+    public float coneCutoutRadius = 2.0f;
+    public float coneCutoutOffset = 4.0f;
 
     private Volume volume;
     private Vignette vignette;
@@ -45,6 +46,7 @@ public class FXManager : MonoBehaviour
         if (playerTransform == null) return;
         Shader.SetGlobalVector("_PlayerPos", playerTransform.position);
         Shader.SetGlobalFloat("_ConeCutoutRadius", coneCutoutRadius);
+        Shader.SetGlobalFloat("_ConeCutoutOffset", coneCutoutOffset);
     }
     
     public void ShowVignette() => StartCoroutine(FadeVignette());

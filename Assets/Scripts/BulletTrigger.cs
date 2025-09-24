@@ -2,24 +2,26 @@ using UnityEngine;
 
 public class BulletTrigger : MonoBehaviour
 {
-    public float Dammage = 0.5f;
-    void Start()
-    {
-        
-    }
+    public float Dammage = 1;
+    public GameObject gfx;
+    private AudioSource bulletSource;
+    public AudioClip[] audioClips;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    private void OnTriggerEnter(Collider other)
+	private void Awake()
+	{
+		bulletSource = GetComponent<AudioSource>();
+        bulletSource.PlayOneShot(audioClips[Random.Range(0, audioClips.Length - 1)]);
+	}
+
+	private void OnTriggerEnter(Collider other)
     {
         if (other.TryGetComponent<EnemyBehaviour>(out var enemy))
         {
+            
             if (enemy.isOperational)
             {
                 enemy.UpdateLife(enemy.life - Dammage);
+                Destroy(gameObject);
             }
             else
             {
@@ -33,12 +35,12 @@ public class BulletTrigger : MonoBehaviour
     }
     void DestroyItself()
     {
-        Destroy(this.gameObject);
+        Destroy(gameObject, 0.1f);
     }
     public void DisableBullet()
     {
-        this.GetComponent<MeshRenderer>().enabled = false;
-        this.GetComponent<Collider>().enabled = false;
+        gfx.SetActive(false);
+        GetComponent<Collider>().enabled = false;
     }
 }
 
